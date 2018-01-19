@@ -54,6 +54,13 @@ extension DevotionListViewController: UITableViewDataSource, UITableViewDelegate
     
     // Method to add on blue checkmark to right-end of a cell that is selected
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-
+        /*
+         let sb = UIStoryboard(name: "QualityControl", bundle: nil)
+         let model = QualityControlModel(document: document, questions: questions)
+         let viewModel = QualityControlVM(model: model)
+         let destinationVC = sb.instantiateViewController(withIdentifier: "QualityControlVC") as! QualityControlVC
+         destinationVC.viewModel = viewModel
+         
+         fromVC.navigationController?.pushViewController(destinationVC, animated: true)*/
     }
 }
