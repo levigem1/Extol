@@ -14,6 +14,7 @@ class DevotionListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpTableView()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -23,6 +24,8 @@ class DevotionListViewController: UIViewController {
     }
     
     func setUpTableView(){
+        devotionsTableView.delegate = self
+        devotionsTableView.dataSource = self
         devotionsTableView.register(UINib(nibName:"DevotionTableViewCell", bundle: nil), forCellReuseIdentifier: "DevotionTableViewCell")
     }
 
@@ -39,7 +42,10 @@ extension DevotionListViewController: UITableViewDataSource, UITableViewDelegate
     
     // Configuring/Returning the cells at specific positions in the SettingsTableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)->UITableViewCell{
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DevotionTableViewCell") as! DevotionTableViewCell
+        guard viewModel.devotions.indices.contains(indexPath.row) else { return cell }
+        cell.name.text = viewModel.devotions[indexPath.row].name
+        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
