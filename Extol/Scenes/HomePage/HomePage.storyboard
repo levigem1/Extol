@@ -39,14 +39,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxB-pF-uoJ">
-                                <rect key="frame" x="50" y="159.5" width="275" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxB-pF-uoJ">
+                                <rect key="frame" x="50" y="159.5" width="275" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PA7-f6-iRh">
-                                <rect key="frame" x="165" y="230.5" width="46" height="30"/>
+                                <rect key="frame" x="165" y="232.5" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
@@ -73,6 +73,7 @@
                     <connections>
                         <outlet property="backgroundImage" destination="6d4-4C-TMu" id="r9R-hI-N46"/>
                         <outlet property="spotifyButton" destination="PA7-f6-iRh" id="6dp-vH-hEi"/>
+                        <outlet property="tabBar" destination="JS4-8K-5kG" id="935-lz-6i8"/>
                         <outlet property="titleLabel" destination="sfm-i3-Qa5" id="VWy-5W-dpp"/>
                         <outlet property="welcomeLabel" destination="qxB-pF-uoJ" id="khf-tG-oUa"/>
                     </connections>
