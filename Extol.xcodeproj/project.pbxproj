@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		99AB092020117F4400FD4505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB091F20117F4400FD4505 /* AppDelegate.swift */; };
 		99AB092220117F4400FD4505 /* DevotionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB092120117F4400FD4505 /* DevotionListViewController.swift */; };
-		99AB092520117F4400FD4505 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AB092320117F4400FD4505 /* Main.storyboard */; };
+		99AB092520117F4400FD4505 /* DevotionList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AB092320117F4400FD4505 /* DevotionList.storyboard */; };
 		99AB092720117F4400FD4505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99AB092620117F4400FD4505 /* Assets.xcassets */; };
 		99AB092A20117F4400FD4505 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AB092820117F4400FD4505 /* LaunchScreen.storyboard */; };
 		99AB093520117F4400FD4505 /* ExtolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB093420117F4400FD4505 /* ExtolTests.swift */; };
@@ -36,7 +36,7 @@
 		99AB091C20117F4400FD4505 /* Extol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Extol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99AB091F20117F4400FD4505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99AB092120117F4400FD4505 /* DevotionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotionListViewController.swift; sourceTree = "<group>"; };
-		99AB092420117F4400FD4505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99AB092420117F4400FD4505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DevotionList.storyboard; sourceTree = "<group>"; };
 		99AB092620117F4400FD4505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99AB092920117F4400FD4505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99AB092B20117F4400FD4505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 		99AB0940201184E200FD4505 /* DevotionList */ = {
 			isa = PBXGroup;
 			children = (
-				99AB092320117F4400FD4505 /* Main.storyboard */,
+				99AB092320117F4400FD4505 /* DevotionList.storyboard */,
 				99AB0944201185FD00FD4505 /* DevotionListModel.swift */,
 				99AB0942201185EF00FD4505 /* DevotionListViewModel.swift */,
 				99AB092120117F4400FD4505 /* DevotionListViewController.swift */,
@@ -244,7 +244,7 @@
 				99AB092A20117F4400FD4505 /* LaunchScreen.storyboard in Resources */,
 				99AB094A20118BCA00FD4505 /* DevotionTableViewCell.xib in Resources */,
 				99AB092720117F4400FD4505 /* Assets.xcassets in Resources */,
-				99AB092520117F4400FD4505 /* Main.storyboard in Resources */,
+				99AB092520117F4400FD4505 /* DevotionList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,12 +291,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		99AB092320117F4400FD4505 /* Main.storyboard */ = {
+		99AB092320117F4400FD4505 /* DevotionList.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				99AB092420117F4400FD4505 /* Base */,
 			);
-			name = Main.storyboard;
+			name = DevotionList.storyboard;
 			sourceTree = "<group>";
 		};
 		99AB092820117F4400FD4505 /* LaunchScreen.storyboard */ = {
