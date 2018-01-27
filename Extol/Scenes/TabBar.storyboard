@@ -9,11 +9,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Season-->
         <scene sceneID="oaP-q6-GcX">
             <objects>
                 <navigationController id="Ah6-yK-42l" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="SeasonsIcon" id="Tjx-E4-YHL"/>
+                    <tabBarItem key="tabBarItem" title="Season" image="SeasonsIcon" id="Tjx-E4-YHL"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wz0-jH-0Y8">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -87,11 +87,11 @@
             </objects>
             <point key="canvasLocation" x="97" y="-522"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Artist-->
         <scene sceneID="qZ4-NU-D6a">
             <objects>
                 <navigationController id="J8i-BX-EDM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="ArtistIcon" id="cam-D9-ZKZ"/>
+                    <tabBarItem key="tabBarItem" title="Artist" image="ArtistIcon" id="cam-D9-ZKZ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dr0-id-Gf6">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

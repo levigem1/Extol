@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SeasonsTableViewHeader" customModule="Extol" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="254"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SeasonsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="rt0-Hw-ALB">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="122-Cp-CSl"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RxZ-HE-NAL">
+                    <rect key="frame" x="0.0" y="200" width="375" height="54"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seasons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMS-mo-Ssk">
+                            <rect key="frame" x="10" y="10.5" width="103.5" height="33.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <color key="textColor" red="0.44173255560000002" green="0.49033290149999997" blue="0.49473202230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="lMS-mo-Ssk" firstAttribute="leading" secondItem="RxZ-HE-NAL" secondAttribute="leading" constant="10" id="1lU-Tu-ts8"/>
+                        <constraint firstItem="lMS-mo-Ssk" firstAttribute="centerY" secondItem="RxZ-HE-NAL" secondAttribute="centerY" id="EOY-Kx-CLU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RxZ-HE-NAL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="LRD-2y-hFD"/>
+                <constraint firstItem="rt0-Hw-ALB" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="MBq-oA-Htl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="RxZ-HE-NAL" secondAttribute="bottom" id="bXo-6P-em4"/>
+                <constraint firstItem="rt0-Hw-ALB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="f3U-iu-D7s"/>
+                <constraint firstItem="RxZ-HE-NAL" firstAttribute="top" secondItem="rt0-Hw-ALB" secondAttribute="bottom" id="lDe-Il-WhV"/>
+                <constraint firstItem="rt0-Hw-ALB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="tIh-VD-EyD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RxZ-HE-NAL" secondAttribute="trailing" id="zLh-dO-ev1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="24.5" y="-154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SeasonsBackground" width="626" height="417"/>
+    </resources>
+</document>

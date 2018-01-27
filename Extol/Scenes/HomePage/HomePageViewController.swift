@@ -16,7 +16,6 @@ class HomePageViewController: UIViewController {
         backgroundImage.image = #imageLiteral(resourceName: "Stars")
         titleLabel.text = "Extol"
         welcomeLabel.text = "Welcome to Extel, a place where worship, scripture, and devotion collide."
-        spotifyButton.setTitle("Spotify", for: .normal)
         self.navigationController?.navigationBar.isHidden = true
     }
     

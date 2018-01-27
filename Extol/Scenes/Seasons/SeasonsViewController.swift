@@ -7,6 +7,7 @@ class SeasonsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTableView()
+        self.navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -19,6 +20,7 @@ class SeasonsViewController: UIViewController {
       //  seasonsTableView.delegate = self
       //  seasonsTableView.dataSource = self
         seasonsTableView.register(UINib(nibName:"DevotionTableViewCell", bundle: nil), forCellReuseIdentifier: "DevotionTableViewCell")
+        //seasonsTableView.register(UINib(nibName:"SeasonsTableViewHeader", bundle: nil), forCellReuseIdentifier: "SeasonsTableViewHeader")
     }
     
 }
@@ -41,7 +43,7 @@ extension SeasonsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 30
+        return 150
     }
     
     // Method to add on blue checkmark to right-end of a cell that is selected
@@ -54,6 +56,15 @@ extension SeasonsViewController: UITableViewDataSource, UITableViewDelegate {
          destinationVC.viewModel = viewModel
          
          fromVC.navigationController?.pushViewController(destinationVC, animated: true)*/
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = Bundle.main.loadNibNamed("SeasonsTableViewHeader", owner: self, options: nil)![0] as! SeasonsTableViewHeader
+        return view
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 250
     }
 }
 
