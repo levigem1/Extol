@@ -9,8 +9,6 @@ class HomePageViewController: UIViewController {
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var welcomeLabel: UILabel!
-    @IBOutlet weak var spotifyButton: UIButton!
- //   @IBOutlet weak var tabBar: UITabBar!
     
     override func viewDidLoad() {
        // tabBar.delegate = self
@@ -19,6 +17,7 @@ class HomePageViewController: UIViewController {
         titleLabel.text = "Extol"
         welcomeLabel.text = "Welcome to Extel, a place where worship, scripture, and devotion collide."
         spotifyButton.setTitle("Spotify", for: .normal)
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     private func navigateToSeasons() {

@@ -33,20 +33,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HK-qi-eqj">
-                                <rect key="frame" x="165" y="232.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="A4q-nf-v9B" firstAttribute="leading" secondItem="db6-kQ-kXJ" secondAttribute="leading" id="6yA-5I-43Q"/>
                             <constraint firstItem="3mo-Wh-VKB" firstAttribute="top" secondItem="db6-kQ-kXJ" secondAttribute="top" constant="30" id="CIC-pP-42c"/>
-                            <constraint firstItem="7HK-qi-eqj" firstAttribute="centerX" secondItem="daZ-qA-bhs" secondAttribute="centerX" id="HDq-6R-D8e"/>
                             <constraint firstItem="m8R-rO-L4e" firstAttribute="top" secondItem="3mo-Wh-VKB" secondAttribute="bottom" constant="40" id="HIH-oq-bvl"/>
                             <constraint firstItem="m8R-rO-L4e" firstAttribute="centerX" secondItem="daZ-qA-bhs" secondAttribute="centerX" id="Pnw-eq-xN6"/>
                             <constraint firstItem="db6-kQ-kXJ" firstAttribute="trailing" secondItem="m8R-rO-L4e" secondAttribute="trailing" constant="50" id="YxH-Vl-HA5"/>
-                            <constraint firstItem="7HK-qi-eqj" firstAttribute="top" secondItem="m8R-rO-L4e" secondAttribute="bottom" constant="50" id="dvq-NM-26j"/>
                             <constraint firstItem="A4q-nf-v9B" firstAttribute="bottom" secondItem="db6-kQ-kXJ" secondAttribute="bottom" id="hpc-1V-3L3"/>
                             <constraint firstItem="A4q-nf-v9B" firstAttribute="top" secondItem="daZ-qA-bhs" secondAttribute="top" id="jEC-c7-Srr"/>
                             <constraint firstItem="A4q-nf-v9B" firstAttribute="trailing" secondItem="db6-kQ-kXJ" secondAttribute="trailing" id="teu-bn-2Ek"/>
@@ -59,7 +53,6 @@
                     <navigationItem key="navigationItem" id="euj-yl-70H"/>
                     <connections>
                         <outlet property="backgroundImage" destination="A4q-nf-v9B" id="xbY-tK-FXp"/>
-                        <outlet property="spotifyButton" destination="7HK-qi-eqj" id="VFd-Hu-O8G"/>
                         <outlet property="titleLabel" destination="3mo-Wh-VKB" id="RSM-Xx-Ywk"/>
                         <outlet property="welcomeLabel" destination="m8R-rO-L4e" id="q9o-1v-ucE"/>
                     </connections>
