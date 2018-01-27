@@ -10,14 +10,37 @@ class HomePageViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var spotifyButton: UIButton!
-    @IBOutlet weak var tabBar: UITabBar!
+ //   @IBOutlet weak var tabBar: UITabBar!
     
     override func viewDidLoad() {
-        tabBar.selectedItem = tabBar.items?[EXTOL]
+       // tabBar.delegate = self
+       // tabBar.selectedItem = tabBar.items?[EXTOL]
         backgroundImage.image = #imageLiteral(resourceName: "Stars")
         titleLabel.text = "Extol"
         welcomeLabel.text = "Welcome to Extel, a place where worship, scripture, and devotion collide."
         spotifyButton.setTitle("Spotify", for: .normal)
     }
     
+    private func navigateToSeasons() {
+        let seasonsStoryboard = UIStoryboard(name: "Seasons", bundle: nil)
+        let seasonsViewController = seasonsStoryboard.instantiateViewController(withIdentifier: "SeasonsViewController")
+        
+        let navigationController = UINavigationController(rootViewController: seasonsViewController)
+    }
 }
+/*
+extension HomePageViewController: UITabBarDelegate {
+    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem){
+        guard let itemIndex = tabBar.items?.index(of: item) else { return }
+        switch itemIndex {
+        case SEASONS:
+            navigateToSeasons()
+        case EXTOL:
+            break
+        case ARTISTS:
+            break
+        default:
+            return
+        }
+    }
+}*/

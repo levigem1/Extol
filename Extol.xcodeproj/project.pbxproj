@@ -15,6 +15,7 @@
 		99638765201C718200C285EA /* Artists.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99638764201C718200C285EA /* Artists.storyboard */; };
 		99638767201C718F00C285EA /* ArtistsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99638766201C718F00C285EA /* ArtistsViewModel.swift */; };
 		99638769201C719E00C285EA /* ArtistsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99638768201C719E00C285EA /* ArtistsModel.swift */; };
+		99800D14201CEBCA00CAEA5F /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99800D13201CEBCA00CAEA5F /* HomePage.storyboard */; };
 		99AB092020117F4400FD4505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB091F20117F4400FD4505 /* AppDelegate.swift */; };
 		99AB092220117F4400FD4505 /* DevotionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB092120117F4400FD4505 /* DevotionListViewController.swift */; };
 		99AB092520117F4400FD4505 /* DevotionList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AB092320117F4400FD4505 /* DevotionList.storyboard */; };
@@ -26,7 +27,7 @@
 		99AB09472011864F00FD4505 /* Devotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB09462011864F00FD4505 /* Devotion.swift */; };
 		99AB094A20118BCA00FD4505 /* DevotionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99AB094920118BCA00FD4505 /* DevotionTableViewCell.xib */; };
 		99AB094C20118BD800FD4505 /* DevotionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB094B20118BD800FD4505 /* DevotionTableViewCell.swift */; };
-		99B8E06D201C483E00F5E545 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B8E06C201C483E00F5E545 /* HomePage.storyboard */; };
+		99B8E06D201C483E00F5E545 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B8E06C201C483E00F5E545 /* TabBar.storyboard */; };
 		99B8E070201C4D1300F5E545 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B8E06F201C4D1300F5E545 /* HomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		99638764201C718200C285EA /* Artists.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Artists.storyboard; sourceTree = "<group>"; };
 		99638766201C718F00C285EA /* ArtistsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsViewModel.swift; sourceTree = "<group>"; };
 		99638768201C719E00C285EA /* ArtistsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsModel.swift; sourceTree = "<group>"; };
+		99800D13201CEBCA00CAEA5F /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
 		99AB091C20117F4400FD4505 /* Extol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Extol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99AB091F20117F4400FD4505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99AB092120117F4400FD4505 /* DevotionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotionListViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +66,7 @@
 		99AB09462011864F00FD4505 /* Devotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devotion.swift; sourceTree = "<group>"; };
 		99AB094920118BCA00FD4505 /* DevotionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DevotionTableViewCell.xib; sourceTree = "<group>"; };
 		99AB094B20118BD800FD4505 /* DevotionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotionTableViewCell.swift; sourceTree = "<group>"; };
-		99B8E06C201C483E00F5E545 /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
+		99B8E06C201C483E00F5E545 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		99B8E06F201C4D1300F5E545 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 		99AB093F20117F9400FD4505 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				99B8E06C201C483E00F5E545 /* TabBar.storyboard */,
 				99B8E06E201C496D00F5E545 /* HomePage */,
 				99638758201C70EF00C285EA /* Seasons */,
 				99638761201C715E00C285EA /* Artists */,
@@ -191,7 +194,7 @@
 		99B8E06E201C496D00F5E545 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				99B8E06C201C483E00F5E545 /* HomePage.storyboard */,
+				99800D13201CEBCA00CAEA5F /* HomePage.storyboard */,
 				99B8E06F201C4D1300F5E545 /* HomePageViewController.swift */,
 			);
 			path = HomePage;
@@ -280,7 +283,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99B8E06D201C483E00F5E545 /* HomePage.storyboard in Resources */,
+				99800D14201CEBCA00CAEA5F /* HomePage.storyboard in Resources */,
+				99B8E06D201C483E00F5E545 /* TabBar.storyboard in Resources */,
 				99AB092A20117F4400FD4505 /* LaunchScreen.storyboard in Resources */,
 				99AB094A20118BCA00FD4505 /* DevotionTableViewCell.xib in Resources */,
 				99638765201C718200C285EA /* Artists.storyboard in Resources */,

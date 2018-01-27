@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r5G-xh-y47">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="oaP-q6-GcX">
+            <objects>
+                <navigationController id="Ah6-yK-42l" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="SeasonsIcon" id="Tjx-E4-YHL"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wz0-jH-0Y8">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tgX-iE-nE3" kind="relationship" relationship="rootViewController" id="9af-Sg-pPa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G72-wd-8fp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-543" y="-521"/>
+        </scene>
+        <!--HomePage-->
+        <scene sceneID="WA6-lx-O0J">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomePage" referencedIdentifier="HomePage" id="dhi-N3-Dbh" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yr1-En-bIb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zef-j5-hy9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="226"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hmC-sV-kH8">
+            <objects>
+                <tabBarController id="r5G-xh-y47" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SuL-Zg-Oxh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ah6-yK-42l" kind="relationship" relationship="viewControllers" id="bKj-Hk-8vG"/>
+                        <segue destination="jqY-ib-tQH" kind="relationship" relationship="viewControllers" id="wcz-QV-WSA"/>
+                        <segue destination="J8i-BX-EDM" kind="relationship" relationship="viewControllers" id="3dn-6m-wfS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BHW-bg-bHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1568" y="233"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gdW-RR-ERc">
+            <objects>
+                <navigationController id="jqY-ib-tQH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="ExtolDarkIcon" id="4mg-DM-GYM"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Yyg-iX-u6R">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dhi-N3-Dbh" kind="relationship" relationship="rootViewController" id="eQi-kG-zB8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fmr-4b-rIx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-543" y="227"/>
+        </scene>
+        <!--Seasons-->
+        <scene sceneID="Pot-2q-yWe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Seasons" referencedIdentifier="Seasons" id="tgX-iE-nE3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="b6h-AS-U6z"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0IB-B6-KRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="-522"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qZ4-NU-D6a">
+            <objects>
+                <navigationController id="J8i-BX-EDM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="ArtistIcon" id="cam-D9-ZKZ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dr0-id-Gf6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bv0-sT-9Oi" kind="relationship" relationship="rootViewController" id="60c-ca-4zJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NPj-Xh-XUl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-543" y="1003"/>
+        </scene>
+        <!--Artists-->
+        <scene sceneID="3lN-tM-HrK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Artists" referencedIdentifier="Artists" id="bv0-sT-9Oi" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ULL-w4-dY4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="caR-Sx-y1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199" y="1022"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ArtistIcon" width="25" height="25"/>
+        <image name="ExtolDarkIcon" width="20" height="25"/>
+        <image name="SeasonsIcon" width="25" height="20"/>
+    </resources>
+</document>

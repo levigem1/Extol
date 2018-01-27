@@ -16,8 +16,8 @@ class SeasonsViewController: UIViewController {
     }
     
     func setUpTableView(){
-        seasonsTableView.delegate = self
-        seasonsTableView.dataSource = self
+      //  seasonsTableView.delegate = self
+      //  seasonsTableView.dataSource = self
         seasonsTableView.register(UINib(nibName:"DevotionTableViewCell", bundle: nil), forCellReuseIdentifier: "DevotionTableViewCell")
     }
     
@@ -29,7 +29,7 @@ extension SeasonsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int)->Int{
-        return self.viewModel.devotionsBySeason.count
+        return 1
     }
     
     // Configuring/Returning the cells at specific positions in the SettingsTableView
