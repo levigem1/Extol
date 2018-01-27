@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o50-5E-NmH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Page View Controller-->
+        <scene sceneID="Us5-jf-uu9">
+            <objects>
+                <viewController id="o50-5E-NmH" customClass="HomePageViewController" customModule="Extol" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7cM-C7-ja1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JS4-8K-5kG">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3QR-iZ-XDk"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem title="Seasons" image="SeasonsIcon" id="hB9-dE-4oU"/>
+                                    <tabBarItem title="" image="ExtolDarkIcon" id="otz-S9-lGS"/>
+                                    <tabBarItem title="Artists" image="ArtistIcon" id="f2b-iL-OfO"/>
+                                </items>
+                            </tabBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6d4-4C-TMu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfm-i3-Qa5">
+                                <rect key="frame" x="121" y="50" width="134.5" height="69.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="58"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxB-pF-uoJ">
+                                <rect key="frame" x="50" y="159.5" width="275" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PA7-f6-iRh">
+                                <rect key="frame" x="165" y="230.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JS4-8K-5kG" firstAttribute="leading" secondItem="d77-s3-S6I" secondAttribute="leading" id="2it-iB-DZs"/>
+                            <constraint firstItem="JS4-8K-5kG" firstAttribute="bottom" secondItem="d77-s3-S6I" secondAttribute="bottom" id="9Md-lS-akG"/>
+                            <constraint firstItem="sfm-i3-Qa5" firstAttribute="top" secondItem="d77-s3-S6I" secondAttribute="top" constant="30" id="CIR-th-g0G"/>
+                            <constraint firstItem="6d4-4C-TMu" firstAttribute="leading" secondItem="d77-s3-S6I" secondAttribute="leading" id="DhV-BO-8nZ"/>
+                            <constraint firstItem="6d4-4C-TMu" firstAttribute="top" secondItem="7cM-C7-ja1" secondAttribute="top" id="Hf7-Tz-w27"/>
+                            <constraint firstItem="JS4-8K-5kG" firstAttribute="top" secondItem="6d4-4C-TMu" secondAttribute="bottom" id="I6J-ra-RaE"/>
+                            <constraint firstItem="d77-s3-S6I" firstAttribute="trailing" secondItem="qxB-pF-uoJ" secondAttribute="trailing" constant="50" id="Lxp-Oy-5eC"/>
+                            <constraint firstItem="PA7-f6-iRh" firstAttribute="top" secondItem="qxB-pF-uoJ" secondAttribute="bottom" constant="50" id="Mbe-MY-fQx"/>
+                            <constraint firstItem="sfm-i3-Qa5" firstAttribute="centerX" secondItem="7cM-C7-ja1" secondAttribute="centerX" id="Mqw-B0-zWR"/>
+                            <constraint firstItem="qxB-pF-uoJ" firstAttribute="centerX" secondItem="7cM-C7-ja1" secondAttribute="centerX" id="Ouj-gJ-zl2"/>
+                            <constraint firstItem="qxB-pF-uoJ" firstAttribute="top" secondItem="sfm-i3-Qa5" secondAttribute="bottom" constant="40" id="Viy-9Q-pQW"/>
+                            <constraint firstItem="qxB-pF-uoJ" firstAttribute="leading" secondItem="d77-s3-S6I" secondAttribute="leading" constant="50" id="VkB-1D-doh"/>
+                            <constraint firstItem="PA7-f6-iRh" firstAttribute="centerX" secondItem="7cM-C7-ja1" secondAttribute="centerX" id="puc-nY-P5w"/>
+                            <constraint firstItem="6d4-4C-TMu" firstAttribute="trailing" secondItem="d77-s3-S6I" secondAttribute="trailing" id="qNc-NP-Rzv"/>
+                            <constraint firstItem="JS4-8K-5kG" firstAttribute="trailing" secondItem="d77-s3-S6I" secondAttribute="trailing" id="shO-dh-Qkl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d77-s3-S6I"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="6d4-4C-TMu" id="r9R-hI-N46"/>
+                        <outlet property="spotifyButton" destination="PA7-f6-iRh" id="6dp-vH-hEi"/>
+                        <outlet property="titleLabel" destination="sfm-i3-Qa5" id="VWy-5W-dpp"/>
+                        <outlet property="welcomeLabel" destination="qxB-pF-uoJ" id="khf-tG-oUa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pbf-2Q-j6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="68.815592203898049"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ArtistIcon" width="25" height="25"/>
+        <image name="ExtolDarkIcon" width="20" height="25"/>
+        <image name="SeasonsIcon" width="25" height="20"/>
+    </resources>
+</document>
