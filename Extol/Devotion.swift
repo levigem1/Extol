@@ -3,8 +3,13 @@ import UIKit
 
 enum Season {
     case joy, grief, learning
+    
     var name: String {
-        get { return String(describing: self) }
+        get {
+            var nameString = String(describing: self)
+            nameString.capitalizeFirstLetter()
+            return nameString
+        }
     }
 }
 

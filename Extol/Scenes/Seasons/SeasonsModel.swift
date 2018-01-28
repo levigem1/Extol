@@ -12,7 +12,8 @@ class SeasonsModel {
         let devotion2 = Devotion(withName: "Trust", content: "God is faithful", forSeason: .joy)
         let devotion3 = Devotion(withName: "Faith", content: "God is strong", forSeason: .grief)
         let devotion4 = Devotion(withName: "Pixie Dust", content: "God is faithful", forSeason: .grief)
-        return [[devotion1, devotion2], [devotion3, devotion4]]
+        let devotion5 = Devotion(withName: "Study", content: "Woh", forSeason: .learning)
+        return [[devotion1, devotion2], [devotion3, devotion4], [devotion5]]
     }
 }
 

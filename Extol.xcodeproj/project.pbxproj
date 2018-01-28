@@ -24,6 +24,7 @@
 		99800D23201D944B00CAEA5F /* DevotionViewerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99800D22201D944B00CAEA5F /* DevotionViewerModel.swift */; };
 		99800D25201D945500CAEA5F /* DevotionViewerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99800D24201D945500CAEA5F /* DevotionViewerViewModel.swift */; };
 		99800D27201D946100CAEA5F /* DevotionViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99800D26201D946100CAEA5F /* DevotionViewerViewController.swift */; };
+		99800D2B201E9A1D00CAEA5F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99800D2A201E9A1D00CAEA5F /* StringExtension.swift */; };
 		99AB092020117F4400FD4505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB091F20117F4400FD4505 /* AppDelegate.swift */; };
 		99AB092220117F4400FD4505 /* DevotionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB092120117F4400FD4505 /* DevotionListViewController.swift */; };
 		99AB092520117F4400FD4505 /* DevotionList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AB092320117F4400FD4505 /* DevotionList.storyboard */; };
@@ -67,6 +68,7 @@
 		99800D22201D944B00CAEA5F /* DevotionViewerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotionViewerModel.swift; sourceTree = "<group>"; };
 		99800D24201D945500CAEA5F /* DevotionViewerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotionViewerViewModel.swift; sourceTree = "<group>"; };
 		99800D26201D946100CAEA5F /* DevotionViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotionViewerViewController.swift; sourceTree = "<group>"; };
+		99800D2A201E9A1D00CAEA5F /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		99AB091C20117F4400FD4505 /* Extol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Extol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99AB091F20117F4400FD4505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99AB092120117F4400FD4505 /* DevotionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotionListViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +148,14 @@
 			path = AppWide;
 			sourceTree = "<group>";
 		};
+		99800D29201E9A0300CAEA5F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				99800D2A201E9A1D00CAEA5F /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		99AB091320117F4400FD4505 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +177,7 @@
 		99AB091E20117F4400FD4505 /* Extol */ = {
 			isa = PBXGroup;
 			children = (
+				99800D29201E9A0300CAEA5F /* Extensions */,
 				99AB093F20117F9400FD4505 /* Scenes */,
 				99AB091F20117F4400FD4505 /* AppDelegate.swift */,
 				99AB09462011864F00FD4505 /* Devotion.swift */,
@@ -367,6 +378,7 @@
 				99AB09472011864F00FD4505 /* Devotion.swift in Sources */,
 				99638760201C713900C285EA /* SeasonsModel.swift in Sources */,
 				99AB0945201185FD00FD4505 /* DevotionListModel.swift in Sources */,
+				99800D2B201E9A1D00CAEA5F /* StringExtension.swift in Sources */,
 				99638767201C718F00C285EA /* ArtistsViewModel.swift in Sources */,
 				99800D1D201D659D00CAEA5F /* SeasonsTableViewCell.swift in Sources */,
 			);
