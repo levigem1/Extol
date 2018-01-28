@@ -51,9 +51,6 @@
                     <constraint firstAttribute="bottom" secondItem="q3j-Sv-lkw" secondAttribute="bottom" id="uro-ag-GJ0"/>
                 </constraints>
             </tableViewCellContentView>
-            <connections>
-                <outlet property="backgroundImage" destination="0ve-1f-2t5" id="ApO-Aa-hZu"/>
-            </connections>
             <point key="canvasLocation" x="10.5" y="133"/>
         </tableViewCell>
     </objects>
