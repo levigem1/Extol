@@ -48,7 +48,8 @@ extension SeasonsViewController: UITableViewDataSource, UITableViewDelegate {
         let devotionsThisSeason = viewModel.devotionsBySeason[indexPath.row]
         cell.title.text = devotionsThisSeason.first?.season?.name
         cell.setDevotionCountLabel(forNumberOfDevotions: devotionsThisSeason.count)
-        cell.imageView?.image = #imageLiteral(resourceName: "Bridge")
+        cell.thumbnail?.image = #imageLiteral(resourceName: "Stars")
+
         return cell
     }
     

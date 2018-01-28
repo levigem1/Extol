@@ -7,6 +7,11 @@ class SeasonsTableViewCell: UITableViewCell {
     @IBOutlet weak var title: UILabel!
     @IBOutlet private weak var devotionCount: UILabel!
     
+    override func awakeFromNib() {
+        thumbnail.layer.masksToBounds = true
+        thumbnail.layer.cornerRadius = 8.0
+    }
+    
     override func prepareForReuse() {
         thumbnail = nil
         title.text = ""

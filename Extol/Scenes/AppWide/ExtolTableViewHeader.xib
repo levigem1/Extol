@@ -24,11 +24,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGY-SQ-TJm">
                                 <rect key="frame" x="10" y="8" width="66.5" height="33.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <color key="textColor" red="0.44173255560000002" green="0.49033290149999997" blue="0.49473202230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.83533084392547607" green="0.831554114818573" blue="0.82305830717086792" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jGY-SQ-TJm" firstAttribute="centerY" secondItem="q3j-Sv-lkw" secondAttribute="centerY" id="AZn-Zo-g5W"/>
                             <constraint firstItem="jGY-SQ-TJm" firstAttribute="leading" secondItem="q3j-Sv-lkw" secondAttribute="leading" constant="10" id="UBR-6I-oGT"/>
