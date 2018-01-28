@@ -17,10 +17,10 @@ class SeasonsViewController: UIViewController {
     }
     
     func setUpTableView(){
-      //  seasonsTableView.delegate = self
-      //  seasonsTableView.dataSource = self
+        seasonsTableView.delegate = self
+        seasonsTableView.dataSource = self
         seasonsTableView.register(UINib(nibName:"DevotionTableViewCell", bundle: nil), forCellReuseIdentifier: "DevotionTableViewCell")
-        //seasonsTableView.register(UINib(nibName:"SeasonsTableViewHeader", bundle: nil), forCellReuseIdentifier: "SeasonsTableViewHeader")
+        seasonsTableView.register(UINib(nibName:"SeasonsTableViewHeader", bundle: nil), forCellReuseIdentifier: "SeasonsTableViewHeader")
     }
     
 }
@@ -37,8 +37,8 @@ extension SeasonsViewController: UITableViewDataSource, UITableViewDelegate {
     // Configuring/Returning the cells at specific positions in the SettingsTableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)->UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "DevotionTableViewCell") as! DevotionTableViewCell
-        guard viewModel.devotionsBySeason.indices.contains(indexPath.row) else { return cell }
-        cell.name.text = String(describing: viewModel.devotionsBySeason[indexPath.row].first?.season)
+    //    guard viewModel.devotionsBySeason.indices.contains(indexPath.row) else { return cell }
+        cell.name.text =  "texticle"//String(describing: viewModel.devotionsBySeason[indexPath.row].first?.season)
         return cell
     }
     
@@ -59,8 +59,11 @@ extension SeasonsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = Bundle.main.loadNibNamed("SeasonsTableViewHeader", owner: self, options: nil)![0] as! SeasonsTableViewHeader
-        return view
+       //let headerView: SeasonsTableViewHeader = tableView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SeasonsTableViewHeader", for: section.in) as! DocumentListHeaderView
+        //let headerCell = Bundle.main.loadNibNamed("SeasonsTableViewHeader", owner: self, options: nil)![0] as! SeasonsTableViewHeader
+    //   let headerCell = tableView.dequeueReusableCell(withIdentifier: "SeasonsTableViewHeader") as! SeasonsTableViewHeader
+        let headerCell = self.seasonsTableView.dequeueReusableCell(withIdentifier: "SeasonsTableViewHeader") as! SeasonsTableViewHeader
+        return headerCell
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

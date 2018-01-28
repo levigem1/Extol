@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
-class SeasonsTableViewHeader: UIView {
-    
+class SeasonsTableViewHeader: UITableViewCell {
+    @IBOutlet weak var backgroundImage: UIImageView!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
 }

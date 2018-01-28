@@ -16,7 +16,7 @@
 		99638767201C718F00C285EA /* ArtistsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99638766201C718F00C285EA /* ArtistsViewModel.swift */; };
 		99638769201C719E00C285EA /* ArtistsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99638768201C719E00C285EA /* ArtistsModel.swift */; };
 		99800D14201CEBCA00CAEA5F /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99800D13201CEBCA00CAEA5F /* HomePage.storyboard */; };
-		99800D16201CF3B400CAEA5F /* SeasonTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99800D15201CF3B400CAEA5F /* SeasonTableViewHeader.xib */; };
+		99800D16201CF3B400CAEA5F /* SeasonsTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99800D15201CF3B400CAEA5F /* SeasonsTableViewHeader.xib */; };
 		99800D19201CF48500CAEA5F /* SeasonsTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99800D18201CF48500CAEA5F /* SeasonsTableViewHeader.swift */; };
 		99AB092020117F4400FD4505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB091F20117F4400FD4505 /* AppDelegate.swift */; };
 		99AB092220117F4400FD4505 /* DevotionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB092120117F4400FD4505 /* DevotionListViewController.swift */; };
@@ -53,7 +53,7 @@
 		99638766201C718F00C285EA /* ArtistsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsViewModel.swift; sourceTree = "<group>"; };
 		99638768201C719E00C285EA /* ArtistsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsModel.swift; sourceTree = "<group>"; };
 		99800D13201CEBCA00CAEA5F /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
-		99800D15201CF3B400CAEA5F /* SeasonTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasonTableViewHeader.xib; sourceTree = "<group>"; };
+		99800D15201CF3B400CAEA5F /* SeasonsTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasonsTableViewHeader.xib; sourceTree = "<group>"; };
 		99800D18201CF48500CAEA5F /* SeasonsTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsTableViewHeader.swift; sourceTree = "<group>"; };
 		99AB091C20117F4400FD4505 /* Extol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Extol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99AB091F20117F4400FD4505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		99800D17201CF3D100CAEA5F /* TableViewXibs */ = {
 			isa = PBXGroup;
 			children = (
-				99800D15201CF3B400CAEA5F /* SeasonTableViewHeader.xib */,
+				99800D15201CF3B400CAEA5F /* SeasonsTableViewHeader.xib */,
 				99800D18201CF48500CAEA5F /* SeasonsTableViewHeader.swift */,
 			);
 			path = TableViewXibs;
@@ -298,7 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99800D14201CEBCA00CAEA5F /* HomePage.storyboard in Resources */,
-				99800D16201CF3B400CAEA5F /* SeasonTableViewHeader.xib in Resources */,
+				99800D16201CF3B400CAEA5F /* SeasonsTableViewHeader.xib in Resources */,
 				99B8E06D201C483E00F5E545 /* TabBar.storyboard in Resources */,
 				99AB092A20117F4400FD4505 /* LaunchScreen.storyboard in Resources */,
 				99AB094A20118BCA00FD4505 /* DevotionTableViewCell.xib in Resources */,
