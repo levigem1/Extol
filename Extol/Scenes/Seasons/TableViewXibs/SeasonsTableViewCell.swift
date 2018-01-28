@@ -10,6 +10,9 @@ class SeasonsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         thumbnail.layer.masksToBounds = true
         thumbnail.layer.cornerRadius = 8.0
+        let view = UIView()
+        view.backgroundColor = UIColor.darkGray
+        self.selectedBackgroundView =  view
     }
     
     override func prepareForReuse() {

@@ -11,4 +11,13 @@ import UIKit
 
 class DevotionTableViewCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!
+    override func awakeFromNib() {
+        let view = UIView()
+        view.backgroundColor = UIColor.darkGray
+        self.selectedBackgroundView =  view
+    }
+    
+    override func prepareForReuse() {
+        name.text = ""
+    }
 }

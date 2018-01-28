@@ -49,9 +49,6 @@ extension SeasonsViewController: UITableViewDataSource, UITableViewDelegate {
         cell.title.text = devotionsThisSeason.first?.season?.name
         cell.setDevotionCountLabel(forNumberOfDevotions: devotionsThisSeason.count)
         cell.thumbnail?.image = #imageLiteral(resourceName: "Stars")
-        let view = UIView()
-        view.backgroundColor = UIColor.darkGray
-        cell.selectedBackgroundView =  view
         return cell
     }
     
