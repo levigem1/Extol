@@ -9,8 +9,10 @@
 import UIKit
 
 class DevotionListViewController: UIViewController {
-    var viewModel:  DevotionListViewModel!
+    
     @IBOutlet weak var devotionsTableView: UITableView!
+    
+    var viewModel:  DevotionListViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +30,15 @@ class DevotionListViewController: UIViewController {
         devotionsTableView.dataSource = self
         devotionsTableView.register(UINib(nibName:"DevotionTableViewCell", bundle: nil), forCellReuseIdentifier: "DevotionTableViewCell")
     }
-
+    
+    private func navigateToDevotionViewer(forDevotion devotion: Devotion) {
+        let storyboard = UIStoryboard(name: "DevotionViewer", bundle: nil)
+        let model = DevotionViewerModel(devotion: devotion)
+        let viewModel = DevotionViewerViewModel(model: model)
+        let destinationVC = storyboard.instantiateViewController(withIdentifier: "DevotionViewer") as! DevotionViewerViewController
+        destinationVC.viewModel = viewModel
+        self.navigationController?.pushViewController(destinationVC, animated: true)
+    }
 }
 
 extension DevotionListViewController: UITableViewDataSource, UITableViewDelegate {
@@ -54,13 +64,7 @@ extension DevotionListViewController: UITableViewDataSource, UITableViewDelegate
     
     // Method to add on blue checkmark to right-end of a cell that is selected
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        /*
-         let sb = UIStoryboard(name: "QualityControl", bundle: nil)
-         let model = QualityControlModel(document: document, questions: questions)
-         let viewModel = QualityControlVM(model: model)
-         let destinationVC = sb.instantiateViewController(withIdentifier: "QualityControlVC") as! QualityControlVC
-         destinationVC.viewModel = viewModel
-         
-         fromVC.navigationController?.pushViewController(destinationVC, animated: true)*/
+        let selectedDevotion = viewModel.devotions[indexPath.row]
+        navigateToDevotionViewer(forDevotion: selectedDevotion)
     }
 }
