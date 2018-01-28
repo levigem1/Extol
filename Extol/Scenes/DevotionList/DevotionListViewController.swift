@@ -9,7 +9,7 @@
 import UIKit
 
 class DevotionListViewController: UIViewController {
-    var viewModel =  DevotionListViewModel()
+    var viewModel:  DevotionListViewModel!
     @IBOutlet weak var devotionsTableView: UITableView!
     
     override func viewDidLoad() {

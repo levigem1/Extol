@@ -1,14 +1,13 @@
 import UIKit
 
 class SeasonsViewController: UIViewController {
-    var viewModel:  SeasonsViewModel!
+    var viewModel = SeasonsViewModel()
     @IBOutlet weak var seasonsTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTableView()
         self.navigationController?.navigationBar.isHidden = true
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func didReceiveMemoryWarning() {
@@ -19,6 +18,7 @@ class SeasonsViewController: UIViewController {
     func setUpTableView(){
         seasonsTableView.delegate = self
         seasonsTableView.dataSource = self
+        seasonsTableView.separatorStyle = .none
         seasonsTableView.register(UINib(nibName:"DevotionTableViewCell", bundle: nil), forCellReuseIdentifier: "DevotionTableViewCell")
         seasonsTableView.register(UINib(nibName:"SeasonsTableViewHeader", bundle: nil), forCellReuseIdentifier: "SeasonsTableViewHeader")
         seasonsTableView.register(UINib(nibName:"SeasonsTableViewCell", bundle: nil), forCellReuseIdentifier: "SeasonsTableViewCell")
@@ -32,16 +32,27 @@ extension SeasonsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int)->Int{
-        return 10
+        return viewModel.devotionsBySeason.count
     }
     
-    // Configuring/Returning the cells at specific positions in the SettingsTableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)->UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "SeasonsTableViewCell") as! SeasonsTableViewCell
-        cell.title.text = "Joy"
-        cell.setDevotionCountLabel(forNumberOfDevotions: 3)
+        let devotionsThisSeason = viewModel.devotionsBySeason[indexPath.row]
+        cell.title.text = devotionsThisSeason.first?.season?.name
+        cell.setDevotionCountLabel(forNumberOfDevotions: devotionsThisSeason.count)
         cell.imageView?.image = #imageLiteral(resourceName: "Bridge")
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "DevotionList", bundle: nil)
+        let devotionsThisSeason: [Devotion] = self.viewModel.devotionsBySeason[indexPath.row]
+        let model = DevotionListModel(devotions: devotionsThisSeason)
+        let viewModel = DevotionListViewModel(model: model)
+        let destinationVC = storyboard.instantiateViewController(withIdentifier: "DevotionList") as! DevotionListViewController
+        destinationVC.viewModel = viewModel
+        
+        self.navigationController?.pushViewController(destinationVC, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -52,7 +63,6 @@ extension SeasonsViewController: UITableViewDataSource, UITableViewDelegate {
         let headerCell = self.seasonsTableView.dequeueReusableCell(withIdentifier: "SeasonsTableViewHeader") as! SeasonsTableViewHeader
         return headerCell
     }
-    
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 250
