@@ -49,7 +49,7 @@ extension DevotionListViewController: UITableViewDataSource, UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 30
+        return 60
     }
     
     // Method to add on blue checkmark to right-end of a cell that is selected

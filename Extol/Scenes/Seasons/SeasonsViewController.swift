@@ -24,6 +24,14 @@ class SeasonsViewController: UIViewController {
         seasonsTableView.register(UINib(nibName:"SeasonsTableViewCell", bundle: nil), forCellReuseIdentifier: "SeasonsTableViewCell")
     }
     
+    private func navigateToDevotionList(withDevotions devotions: [Devotion]) {
+        let storyboard = UIStoryboard(name: "DevotionList", bundle: nil)
+        let model = DevotionListModel(devotions: devotions)
+        let viewModel = DevotionListViewModel(model: model)
+        let destinationVC = storyboard.instantiateViewController(withIdentifier: "DevotionList") as! DevotionListViewController
+        destinationVC.viewModel = viewModel
+        self.navigationController?.pushViewController(destinationVC, animated: true)
+    }
 }
 
 extension SeasonsViewController: UITableViewDataSource, UITableViewDelegate {
@@ -45,14 +53,9 @@ extension SeasonsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "DevotionList", bundle: nil)
         let devotionsThisSeason: [Devotion] = self.viewModel.devotionsBySeason[indexPath.row]
-        let model = DevotionListModel(devotions: devotionsThisSeason)
-        let viewModel = DevotionListViewModel(model: model)
-        let destinationVC = storyboard.instantiateViewController(withIdentifier: "DevotionList") as! DevotionListViewController
-        destinationVC.viewModel = viewModel
-        
-        self.navigationController?.pushViewController(destinationVC, animated: true)
+        self.navigateToDevotionList(withDevotions: devotionsThisSeason)
+        self.seasonsTableView.deselectRow(at: indexPath, animated: false)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
