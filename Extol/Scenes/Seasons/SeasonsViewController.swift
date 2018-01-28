@@ -20,7 +20,7 @@ class SeasonsViewController: UIViewController {
         seasonsTableView.dataSource = self
         seasonsTableView.separatorStyle = .none
         seasonsTableView.register(UINib(nibName:"DevotionTableViewCell", bundle: nil), forCellReuseIdentifier: "DevotionTableViewCell")
-        seasonsTableView.register(UINib(nibName:"SeasonsTableViewHeader", bundle: nil), forCellReuseIdentifier: "SeasonsTableViewHeader")
+        seasonsTableView.register(UINib(nibName:"ExtolTableViewHeader", bundle: nil), forCellReuseIdentifier: "ExtolTableViewHeader")
         seasonsTableView.register(UINib(nibName:"SeasonsTableViewCell", bundle: nil), forCellReuseIdentifier: "SeasonsTableViewCell")
     }
     
@@ -63,7 +63,9 @@ extension SeasonsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerCell = self.seasonsTableView.dequeueReusableCell(withIdentifier: "SeasonsTableViewHeader") as! SeasonsTableViewHeader
+        let headerCell = self.seasonsTableView.dequeueReusableCell(withIdentifier: "ExtolTableViewHeader") as! ExtolTableViewHeader
+        headerCell.setTitle(to: "Seasons")
+        headerCell.setImage(to: #imageLiteral(resourceName: "SeasonsBackground"))
         return headerCell
     }
     

@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SeasonsTableViewHeader" rowHeight="210" id="m4J-xw-e9r" customClass="SeasonsTableViewHeader" customModule="Extol" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExtolTableViewHeader" rowHeight="210" id="m4J-xw-e9r" customClass="ExtolTableViewHeader" customModule="Extol" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m4J-xw-e9r" id="idP-is-Zw0">
@@ -21,8 +21,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q3j-Sv-lkw">
                         <rect key="frame" x="0.0" y="200" width="375" height="49"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seasons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGY-SQ-TJm">
-                                <rect key="frame" x="10" y="8" width="103.5" height="33.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGY-SQ-TJm">
+                                <rect key="frame" x="10" y="8" width="66.5" height="33.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" red="0.44173255560000002" green="0.49033290149999997" blue="0.49473202230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -34,7 +34,7 @@
                             <constraint firstItem="jGY-SQ-TJm" firstAttribute="leading" secondItem="q3j-Sv-lkw" secondAttribute="leading" constant="10" id="UBR-6I-oGT"/>
                         </constraints>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SeasonsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="0ve-1f-2t5">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0ve-1f-2t5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="200" id="Hi4-tO-WZb"/>
@@ -51,10 +51,11 @@
                     <constraint firstAttribute="bottom" secondItem="q3j-Sv-lkw" secondAttribute="bottom" id="uro-ag-GJ0"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="backgroundImageView" destination="0ve-1f-2t5" id="qFp-8U-9QQ"/>
+                <outlet property="title" destination="jGY-SQ-TJm" id="Qzf-Ef-xlq"/>
+            </connections>
             <point key="canvasLocation" x="10.5" y="133"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="SeasonsBackground" width="626" height="417"/>
-    </resources>
 </document>
