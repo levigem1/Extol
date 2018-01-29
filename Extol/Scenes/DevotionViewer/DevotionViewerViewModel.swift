@@ -6,7 +6,7 @@ class DevotionViewerViewModel {
         self.model = model
     }
     
-    var devotions: Devotion {
+    var devotion: Devotion {
         return model.devotion
     }
 }

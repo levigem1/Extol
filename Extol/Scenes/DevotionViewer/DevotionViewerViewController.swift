@@ -10,13 +10,53 @@ class DevotionViewerViewController: UIViewController {
     @IBOutlet weak var lyricsText: UILabel!
     @IBOutlet weak var fullLyricsLink: UIButton!
     @IBOutlet weak var scriptureHeader: UILabel!
-    @IBOutlet weak var scripturePassage: UILabel!
+    @IBOutlet weak var scriptureSource: UILabel!
     @IBOutlet weak var scriptureText: UILabel!
     @IBOutlet weak var devotionHeader: UILabel!
     @IBOutlet weak var devotionText: UILabel!
     
     override func viewDidLoad() {
-       
+        setDevotionTitle()
+        setLyricsHeader()
+        lyricsText.text = viewModel.devotion.lyrics
+        fullLyricsLink.titleLabel?.text = "Full Lyrics"
+        setScriptureHeader()
+        scriptureSource.text = viewModel.devotion.scriptureSource
+        setDevotionHeader()
+        devotionText.text = viewModel.devotion.devotionText
+    }
+    
+    func setDevotionTitle(){
+        let fontSize = devotionTitle.font.pointSize
+        let formattedString = NSMutableAttributedString()
+        formattedString
+            .bold(viewModel.devotion.song, withSize: fontSize)
+            .normal(" - \(viewModel.devotion.artist)")
+        devotionTitle.attributedText = formattedString
+    }
+    
+    func setLyricsHeader(){
+        let fontSize = lyricsHeader.font.pointSize
+        let formattedString = NSMutableAttributedString()
+        formattedString
+            .bold("Lyrics", withSize: fontSize)
+        lyricsHeader.attributedText = formattedString
+    }
+    
+    func setScriptureHeader(){
+        let fontSize = scriptureHeader.font.pointSize
+        let formattedString = NSMutableAttributedString()
+        formattedString
+            .bold("Scripture", withSize: fontSize)
+        scriptureHeader.attributedText = formattedString
+    }
+    
+    func setDevotionHeader(){
+        let fontSize = devotionHeader.font.pointSize
+        let formattedString = NSMutableAttributedString()
+        formattedString
+            .bold("Devotion", withSize: fontSize)
+        devotionHeader.attributedText = formattedString
     }
     
     @IBAction func spotifyButtonPressed(_ sender: Any) {
