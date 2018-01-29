@@ -17,7 +17,7 @@ class DevotionListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTableView()
-        // Do any additional setup after loading the view, typically from a nib.
+        devotionsTableView.correctContentInset()
     }
 
     override func didReceiveMemoryWarning() {

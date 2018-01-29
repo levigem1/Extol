@@ -8,6 +8,11 @@ class SeasonsViewController: UIViewController {
         super.viewDidLoad()
         setUpTableView()
         self.navigationController?.navigationBar.isHidden = true
+        seasonsTableView.correctContentInset()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        seasonsTableView.scrollToTop()
     }
     
     override func didReceiveMemoryWarning() {

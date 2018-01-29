@@ -13,7 +13,7 @@
         <!--Seasons View Controller-->
         <scene sceneID="nV1-fC-L1n">
             <objects>
-                <viewController storyboardIdentifier="Seasons" id="5MD-Qb-4qV" customClass="SeasonsViewController" customModule="Extol" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Seasons" automaticallyAdjustsScrollViewInsets="NO" id="5MD-Qb-4qV" customClass="SeasonsViewController" customModule="Extol" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UyP-te-Qt9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
