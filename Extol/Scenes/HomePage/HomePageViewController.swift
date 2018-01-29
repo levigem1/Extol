@@ -14,7 +14,7 @@ class HomePageViewController: UIViewController {
     override func viewDidLoad() {
         backgroundImage.image = #imageLiteral(resourceName: "Stars")
         titleLabel.text = "Extol"
-        welcomeLabel.text = "Welcome to Extel, a place where worship, scripture, and devotion collide."
+        welcomeLabel.text = "Welcome to Extol, a place where worship, scripture, and devotion collide."
         setHelpFont()
         self.navigationController?.navigationBar.isHidden = true
     }
@@ -23,7 +23,7 @@ class HomePageViewController: UIViewController {
         let fontSize = helpLabel.font.pointSize
         let formattedString = NSMutableAttributedString()
         formattedString
-            .normal("Finder your devotion by selecting ")
+            .normal("Find your devotion by selecting ")
             .bold("Seasons", withSize: fontSize)
             .normal(" or ")
             .bold("Artists", withSize: fontSize)
