@@ -39,6 +39,9 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BE8-Vm-wwc">
                                                                 <rect key="frame" x="0.0" y="25.5" width="46" height="30"/>
                                                                 <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="spotifyButtonPressed:" destination="z8s-0X-NKA" eventType="touchUpInside" id="b8D-30-S0Y"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.86474857230000002" green="0.4558046657" blue="0.47190600269999999" alpha="0.60062607020000003" colorSpace="custom" customColorSpace="sRGB"/>
@@ -160,6 +163,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="25d-QC-R8z"/>
                     </view>
+                    <connections>
+                        <outlet property="spotifyButton" destination="BE8-Vm-wwc" id="vvz-8U-zeP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cg-DY-LND" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

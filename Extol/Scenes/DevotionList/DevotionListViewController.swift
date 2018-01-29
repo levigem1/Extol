@@ -54,7 +54,7 @@ extension DevotionListViewController: UITableViewDataSource, UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)->UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "DevotionTableViewCell") as! DevotionTableViewCell
         guard viewModel.devotions.indices.contains(indexPath.row) else { return cell }
-        cell.name.text = viewModel.devotions[indexPath.row].name
+        cell.name.text = viewModel.devotions[indexPath.row].song
         return cell
     }
     
