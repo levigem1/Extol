@@ -7,9 +7,27 @@
 //
 
 import Foundation
+import UIKit
 
 extension String {
     mutating func capitalizeFirstLetter() {
         self = self.prefix(1).uppercased() + dropFirst()
+    }
+}
+
+extension NSMutableAttributedString {
+    @discardableResult func bold(_ text: String, withSize size: CGFloat) -> NSMutableAttributedString {
+        let attrs: [NSAttributedStringKey: Any] = [.font: UIFont.boldSystemFont(ofSize: size)]
+        let boldString = NSMutableAttributedString(string:text, attributes: attrs)
+        append(boldString)
+        
+        return self
+    }
+    
+    @discardableResult func normal(_ text: String) -> NSMutableAttributedString {
+        let normal = NSAttributedString(string: text)
+        append(normal)
+        
+        return self
     }
 }

@@ -33,16 +33,26 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHS-ZO-3hy">
+                                <rect key="frame" x="45" y="222.5" width="285" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="rHS-ZO-3hy" firstAttribute="leading" secondItem="db6-kQ-kXJ" secondAttribute="leading" constant="45" id="6f9-3o-Osj"/>
                             <constraint firstItem="A4q-nf-v9B" firstAttribute="leading" secondItem="db6-kQ-kXJ" secondAttribute="leading" id="6yA-5I-43Q"/>
                             <constraint firstItem="3mo-Wh-VKB" firstAttribute="top" secondItem="db6-kQ-kXJ" secondAttribute="top" constant="30" id="CIC-pP-42c"/>
                             <constraint firstItem="m8R-rO-L4e" firstAttribute="top" secondItem="3mo-Wh-VKB" secondAttribute="bottom" constant="40" id="HIH-oq-bvl"/>
+                            <constraint firstItem="rHS-ZO-3hy" firstAttribute="centerX" secondItem="daZ-qA-bhs" secondAttribute="centerX" id="NJ7-Iw-ODD"/>
                             <constraint firstItem="m8R-rO-L4e" firstAttribute="centerX" secondItem="daZ-qA-bhs" secondAttribute="centerX" id="Pnw-eq-xN6"/>
+                            <constraint firstItem="rHS-ZO-3hy" firstAttribute="top" secondItem="m8R-rO-L4e" secondAttribute="bottom" constant="40" id="XKl-iy-dYW"/>
                             <constraint firstItem="db6-kQ-kXJ" firstAttribute="trailing" secondItem="m8R-rO-L4e" secondAttribute="trailing" constant="50" id="YxH-Vl-HA5"/>
                             <constraint firstItem="A4q-nf-v9B" firstAttribute="bottom" secondItem="db6-kQ-kXJ" secondAttribute="bottom" id="hpc-1V-3L3"/>
                             <constraint firstItem="A4q-nf-v9B" firstAttribute="top" secondItem="daZ-qA-bhs" secondAttribute="top" id="jEC-c7-Srr"/>
+                            <constraint firstItem="db6-kQ-kXJ" firstAttribute="trailing" secondItem="rHS-ZO-3hy" secondAttribute="trailing" constant="45" id="sng-ET-9Rm"/>
                             <constraint firstItem="A4q-nf-v9B" firstAttribute="trailing" secondItem="db6-kQ-kXJ" secondAttribute="trailing" id="teu-bn-2Ek"/>
                             <constraint firstItem="3mo-Wh-VKB" firstAttribute="centerX" secondItem="daZ-qA-bhs" secondAttribute="centerX" id="u6I-xp-h1H"/>
                             <constraint firstItem="m8R-rO-L4e" firstAttribute="leading" secondItem="db6-kQ-kXJ" secondAttribute="leading" constant="50" id="ycc-RE-yFL"/>
@@ -53,6 +63,7 @@
                     <navigationItem key="navigationItem" id="euj-yl-70H"/>
                     <connections>
                         <outlet property="backgroundImage" destination="A4q-nf-v9B" id="xbY-tK-FXp"/>
+                        <outlet property="helpLabel" destination="rHS-ZO-3hy" id="jtB-nX-Jy8"/>
                         <outlet property="titleLabel" destination="3mo-Wh-VKB" id="RSM-Xx-Ywk"/>
                         <outlet property="welcomeLabel" destination="m8R-rO-L4e" id="q9o-1v-ucE"/>
                     </connections>
