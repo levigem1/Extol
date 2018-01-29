@@ -10,7 +10,7 @@ class ExtolTableViewHeader: UITableViewCell {
         title.text = nil
     }
     
-    func setTitle(to title: String) {
+    func setTitle(to title: String?) {
         self.title.text = title
     }
     

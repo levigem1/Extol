@@ -20,7 +20,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ly7-k9-3kX">
-                        <rect key="frame" x="16" y="11" width="343" height="22"/>
+                        <rect key="frame" x="15" y="11" width="344" height="22"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.83533084390000001" green="0.83155411479999997" blue="0.82305830719999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -28,8 +28,8 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="ly7-k9-3kX" firstAttribute="leading" secondItem="qtV-dL-scq" secondAttribute="leadingMargin" id="3Xl-th-XfH"/>
                     <constraint firstAttribute="bottomMargin" secondItem="ly7-k9-3kX" secondAttribute="bottom" id="UCi-Vk-oCH"/>
+                    <constraint firstItem="ly7-k9-3kX" firstAttribute="leading" secondItem="qtV-dL-scq" secondAttribute="leading" constant="15" id="aEV-kx-qfr"/>
                     <constraint firstItem="ly7-k9-3kX" firstAttribute="top" secondItem="qtV-dL-scq" secondAttribute="topMargin" id="vl6-s1-Abx"/>
                     <constraint firstAttribute="trailingMargin" secondItem="ly7-k9-3kX" secondAttribute="trailing" id="x0i-fc-zLP"/>
                 </constraints>

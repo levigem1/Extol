@@ -204,8 +204,8 @@
 				99B8E06E201C496D00F5E545 /* HomePage */,
 				99638758201C70EF00C285EA /* Seasons */,
 				99638761201C715E00C285EA /* Artists */,
-				99AB0941201184FC00FD4505 /* DevotionViewer */,
 				99AB0940201184E200FD4505 /* DevotionList */,
+				99AB0941201184FC00FD4505 /* DevotionViewer */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";

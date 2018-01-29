@@ -29,6 +29,7 @@ class DevotionListViewController: UIViewController {
         devotionsTableView.delegate = self
         devotionsTableView.dataSource = self
         devotionsTableView.register(UINib(nibName:"DevotionTableViewCell", bundle: nil), forCellReuseIdentifier: "DevotionTableViewCell")
+        devotionsTableView.register(UINib(nibName:"ExtolTableViewHeader", bundle: nil), forCellReuseIdentifier: "ExtolTableViewHeader")
     }
     
     private func navigateToDevotionViewer(forDevotion devotion: Devotion) {
@@ -50,7 +51,6 @@ extension DevotionListViewController: UITableViewDataSource, UITableViewDelegate
         return self.viewModel.devotions.count
     }
     
-    // Configuring/Returning the cells at specific positions in the SettingsTableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)->UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "DevotionTableViewCell") as! DevotionTableViewCell
         guard viewModel.devotions.indices.contains(indexPath.row) else { return cell }
@@ -62,9 +62,19 @@ extension DevotionListViewController: UITableViewDataSource, UITableViewDelegate
         return 60
     }
     
-    // Method to add on blue checkmark to right-end of a cell that is selected
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         let selectedDevotion = viewModel.devotions[indexPath.row]
         navigateToDevotionViewer(forDevotion: selectedDevotion)
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerCell = devotionsTableView.dequeueReusableCell(withIdentifier: "ExtolTableViewHeader") as! ExtolTableViewHeader
+        headerCell.setTitle(to: viewModel.devotions.first?.season?.name)
+        headerCell.setImage(to: #imageLiteral(resourceName: "Flowers"))
+        return headerCell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 250
     }
 }
