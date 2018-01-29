@@ -27,7 +27,7 @@ class HomePageViewController: UIViewController {
             .bold("Seasons", withSize: fontSize)
             .normal(" or ")
             .bold("Artists", withSize: fontSize)
-            .normal(" below")
+            .normal(" below.")
         
         helpLabel.attributedText = formattedString
     }
