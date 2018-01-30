@@ -24,6 +24,14 @@ extension NSMutableAttributedString {
         return self
     }
     
+    @discardableResult func italicize(_ text: String, withSize size: CGFloat) -> NSMutableAttributedString {
+        let attrs: [NSAttributedStringKey: Any] = [.font: UIFont.italicSystemFont(ofSize: size)]
+        let italicString = NSMutableAttributedString(string:text, attributes: attrs)
+        append(italicString)
+        
+        return self
+    }
+    
     @discardableResult func normal(_ text: String) -> NSMutableAttributedString {
         let normal = NSAttributedString(string: text)
         append(normal)

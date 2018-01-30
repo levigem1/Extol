@@ -21,7 +21,8 @@ class DevotionViewerViewController: UIViewController {
         lyricsText.text = viewModel.devotion.lyrics
         fullLyricsLink.titleLabel?.text = "Full Lyrics"
         setScriptureHeader()
-        scriptureSource.text = viewModel.devotion.scriptureSource
+        setScriptureSource()
+        scriptureText.text = viewModel.devotion.scriptureText
         setDevotionHeader()
         devotionText.text = viewModel.devotion.devotionText
     }
@@ -49,6 +50,14 @@ class DevotionViewerViewController: UIViewController {
         formattedString
             .bold("Scripture", withSize: fontSize)
         scriptureHeader.attributedText = formattedString
+    }
+    
+    func setScriptureSource(){
+        let fontSize = scriptureHeader.font.pointSize
+        let formattedString = NSMutableAttributedString()
+        formattedString
+            .italicize(viewModel.devotion.scriptureSource, withSize: fontSize)
+        scriptureSource.attributedText = formattedString
     }
     
     func setDevotionHeader(){
