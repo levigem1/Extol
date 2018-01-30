@@ -51,9 +51,10 @@ extension SeasonsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)->UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "SeasonsTableViewCell") as! SeasonsTableViewCell
         let devotionsThisSeason = viewModel.devotionsBySeason[indexPath.row]
-        cell.title.text = devotionsThisSeason.first?.season?.name
+        let season = devotionsThisSeason.first?.season
+        cell.title.text = season?.name
+        cell.thumbnail?.image = season?.image
         cell.setDevotionCountLabel(forNumberOfDevotions: devotionsThisSeason.count)
-        cell.thumbnail?.image = #imageLiteral(resourceName: "Stars")
         return cell
     }
     

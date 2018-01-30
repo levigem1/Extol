@@ -1,17 +1,4 @@
 import Foundation
-import UIKit
-
-enum Season {
-    case joy, grief, learning
-    
-    var name: String {
-        get {
-            var nameString = String(describing: self)
-            nameString.capitalizeFirstLetter()
-            return nameString
-        }
-    }
-}
 
 class Devotion {
     var song: String = ""

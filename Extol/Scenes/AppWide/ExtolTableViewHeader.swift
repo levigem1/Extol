@@ -14,7 +14,7 @@ class ExtolTableViewHeader: UITableViewCell {
         self.title.text = title
     }
     
-    func setImage(to image: UIImage) {
+    func setImage(to image: UIImage?) {
         backgroundImageView.image = image
     }
 }

@@ -12,7 +12,7 @@ class HomePageViewController: UIViewController {
     @IBOutlet weak var helpLabel: UILabel!
     
     override func viewDidLoad() {
-        backgroundImage.image = #imageLiteral(resourceName: "Stars")
+        backgroundImage.image = #imageLiteral(resourceName: "HomePageBackground")
         titleLabel.text = "Extol"
         welcomeLabel.text = "Welcome to Extol, a place where worship, scripture, and devotion collide."
         setHelpFont()

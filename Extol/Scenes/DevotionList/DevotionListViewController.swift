@@ -70,7 +70,7 @@ extension DevotionListViewController: UITableViewDataSource, UITableViewDelegate
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerCell = devotionsTableView.dequeueReusableCell(withIdentifier: "ExtolTableViewHeader") as! ExtolTableViewHeader
         headerCell.setTitle(to: viewModel.devotions.first?.season?.name)
-        headerCell.setImage(to: #imageLiteral(resourceName: "Flowers"))
+        headerCell.setImage(to: viewModel.devotions.first?.season?.image)
         return headerCell
     }
     
