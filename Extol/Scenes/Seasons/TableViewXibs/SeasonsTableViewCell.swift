@@ -16,7 +16,7 @@ class SeasonsTableViewCell: UITableViewCell {
     }
     
     override func prepareForReuse() {
-        thumbnail = nil
+        thumbnail.image = nil
         title.text = ""
         devotionCount.text = ""
     }
