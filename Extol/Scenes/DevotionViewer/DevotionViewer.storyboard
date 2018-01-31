@@ -178,9 +178,9 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="9md-Xo-5eM" firstAttribute="top" secondItem="fTo-Cq-hNa" secondAttribute="top" id="8wJ-2x-Sc0"/>
-                            <constraint firstItem="9md-Xo-5eM" firstAttribute="trailing" secondItem="25d-QC-R8z" secondAttribute="trailing" id="FzU-4a-AR6"/>
-                            <constraint firstItem="9md-Xo-5eM" firstAttribute="leading" secondItem="25d-QC-R8z" secondAttribute="leading" id="sKe-hZ-N2t"/>
-                            <constraint firstItem="9md-Xo-5eM" firstAttribute="bottom" secondItem="25d-QC-R8z" secondAttribute="bottom" id="u5W-nO-kni"/>
+                            <constraint firstItem="9md-Xo-5eM" firstAttribute="trailing" secondItem="fTo-Cq-hNa" secondAttribute="trailing" id="FzU-4a-AR6"/>
+                            <constraint firstItem="9md-Xo-5eM" firstAttribute="leading" secondItem="fTo-Cq-hNa" secondAttribute="leading" id="sKe-hZ-N2t"/>
+                            <constraint firstItem="9md-Xo-5eM" firstAttribute="bottom" secondItem="fTo-Cq-hNa" secondAttribute="bottom" id="u5W-nO-kni"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="25d-QC-R8z"/>
                     </view>
