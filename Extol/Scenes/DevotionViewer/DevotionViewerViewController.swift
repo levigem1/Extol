@@ -88,7 +88,8 @@ class DevotionViewerViewController: UIViewController, SFSafariViewControllerDele
         if isSpotifyInstalled() {
             UIApplication.shared.open(NSURL(string:"spotify:track:\(self.viewModel.devotion.spotifyURI)")! as URL, options: [:], completionHandler: nil)
         } else {
-            UIApplication.shared.open(NSURL(string:"https://open.spotify.com/track/\(self.viewModel.devotion.spotifyURI)")! as URL, options: [:], completionHandler: nil)
+            let spotifyLink = "https://open.spotify.com/track/\(self.viewModel.devotion.spotifyURI)"
+            launchSafariViewController(withUrlString: spotifyLink)
         }
     }
     
@@ -97,8 +98,12 @@ class DevotionViewerViewController: UIViewController, SFSafariViewControllerDele
     }
     
     @IBAction func fullLyricsButtonPressed(_ sender: Any) {
-        if let lyricsWebsite = URL(string: viewModel.devotion.lyricsURL) {
-            let safariVC = SFSafariViewController(url: lyricsWebsite)
+            launchSafariViewController(withUrlString: viewModel.devotion.lyricsURL)
+    }
+    
+    private func launchSafariViewController(withUrlString urlString: String) {
+        if let url = URL(string: urlString) {
+            let safariVC = SFSafariViewController(url: url)
             self.present(safariVC, animated: true, completion: nil)
             safariVC.delegate = self
         }
