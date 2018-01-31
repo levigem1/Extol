@@ -18,6 +18,7 @@ class DevotionViewerViewController: UIViewController, SFSafariViewControllerDele
     
     override func viewDidLoad() {
         setDevotionTitle()
+        setSpotifyButton()
         setLyricsHeader()
         lyricsText.text = viewModel.devotion.lyrics
         setFullLyricsButton()
@@ -35,6 +36,13 @@ class DevotionViewerViewController: UIViewController, SFSafariViewControllerDele
             .bold(viewModel.devotion.song, withSize: fontSize)
             .normal(" - \(viewModel.devotion.artist)")
         devotionTitle.attributedText = formattedString
+    }
+    
+    func setSpotifyButton() {
+        spotifyButton.setTitle("Play", for: .normal)
+        spotifyButton.layer.cornerRadius = 5
+        spotifyButton.layer.borderWidth = 1
+        spotifyButton.layer.borderColor = UIColor.white.cgColor
     }
     
     func setLyricsHeader(){
@@ -78,9 +86,9 @@ class DevotionViewerViewController: UIViewController, SFSafariViewControllerDele
     
     @IBAction func spotifyButtonPressed(_ sender: Any) {
         if isSpotifyInstalled() {
-            UIApplication.shared.open(NSURL(string:"spotify:track:06TY7FCbeT7Lu39oZ0IEsN")! as URL, options: [:], completionHandler: nil)
+            UIApplication.shared.open(NSURL(string:"spotify:track:\(self.viewModel.devotion.spotifyURI)")! as URL, options: [:], completionHandler: nil)
         } else {
-            UIApplication.shared.open(NSURL(string:"https://open.spotify.com/track/06TY7FCbeT7Lu39oZ0IEsN")! as URL, options: [:], completionHandler: nil)
+            UIApplication.shared.open(NSURL(string:"https://open.spotify.com/track/\(self.viewModel.devotion.spotifyURI)")! as URL, options: [:], completionHandler: nil)
         }
     }
     

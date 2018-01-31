@@ -25,7 +25,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
                                             <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qgd-f8-In2">
-                                                <rect key="frame" x="15" y="15" width="345" height="50.5"/>
+                                                <rect key="frame" x="15" y="15" width="345" height="59"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQm-Cc-biB">
                                                         <rect key="frame" x="0.0" y="0.0" width="345" height="20.5"/>
@@ -33,11 +33,17 @@
                                                         <color key="textColor" red="0.83533084390000001" green="0.83155411479999997" blue="0.82305830719999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BE8-Vm-wwc">
-                                                        <rect key="frame" x="0.0" y="25.5" width="79" height="25"/>
-                                                        <state key="normal" title="Button" image="spotifylogowhite"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="BE8-Vm-wwc">
+                                                        <rect key="frame" x="0.0" y="26" width="90" height="33"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="90" id="2PJ-2O-rPr"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <inset key="contentEdgeInsets" minX="11" minY="4" maxX="2" maxY="4"/>
+                                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="Play" image="spotifylogowhite"/>
                                                         <connections>
-                                                            <action selector="spotifyButtonPressed:" destination="z8s-0X-NKA" eventType="touchUpInside" id="b8D-30-S0Y"/>
+                                                            <action selector="spotifyButtonPressed:" destination="z8s-0X-NKA" eventType="touchUpInside" id="CEY-bf-nTn"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -46,13 +52,13 @@
                                                     <constraint firstItem="BE8-Vm-wwc" firstAttribute="leading" secondItem="Qgd-f8-In2" secondAttribute="leading" id="0nR-e5-NdX"/>
                                                     <constraint firstItem="BE8-Vm-wwc" firstAttribute="top" secondItem="PQm-Cc-biB" secondAttribute="bottom" constant="5" id="DQT-dH-qL3"/>
                                                     <constraint firstItem="PQm-Cc-biB" firstAttribute="leading" secondItem="Qgd-f8-In2" secondAttribute="leading" id="Dqg-3N-dHp"/>
-                                                    <constraint firstAttribute="bottom" secondItem="BE8-Vm-wwc" secondAttribute="bottom" id="YQL-qm-2rZ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="BE8-Vm-wwc" secondAttribute="bottom" id="GJ2-3w-kW5"/>
                                                     <constraint firstItem="PQm-Cc-biB" firstAttribute="top" secondItem="Qgd-f8-In2" secondAttribute="top" id="ptS-y3-D96"/>
                                                     <constraint firstAttribute="trailing" secondItem="PQm-Cc-biB" secondAttribute="trailing" id="tfe-ve-Hmb"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0m-DH-d3X">
-                                                <rect key="frame" x="15" y="211.5" width="345" height="66.5"/>
+                                                <rect key="frame" x="15" y="220" width="345" height="66.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8f-aG-7kN">
                                                         <rect key="frame" x="0.0" y="0.0" width="345" height="20.5"/>
@@ -88,7 +94,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Zy-1j-eKG">
-                                                <rect key="frame" x="15" y="318" width="345" height="46"/>
+                                                <rect key="frame" x="15" y="326.5" width="345" height="46"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tm8-KC-n6Q">
                                                         <rect key="frame" x="0.0" y="0.0" width="345" height="20.5"/>
@@ -115,7 +121,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AX2-AW-vtn">
-                                                <rect key="frame" x="15" y="85.5" width="345" height="81"/>
+                                                <rect key="frame" x="15" y="94" width="345" height="81"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3L1-gX-1EU">
                                                         <rect key="frame" x="0.0" y="0.0" width="345" height="20.5"/>
@@ -200,7 +206,7 @@
                         <outlet property="scriptureHeader" destination="E8f-aG-7kN" id="nAA-T5-3mR"/>
                         <outlet property="scriptureSource" destination="DNm-if-1AG" id="Q1l-jO-iQd"/>
                         <outlet property="scriptureText" destination="LI3-ab-RkE" id="B1t-tL-I34"/>
-                        <outlet property="spotifyButton" destination="BE8-Vm-wwc" id="vvz-8U-zeP"/>
+                        <outlet property="spotifyButton" destination="BE8-Vm-wwc" id="4wn-2h-ISc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cg-DY-LND" userLabel="First Responder" sceneMemberID="firstResponder"/>

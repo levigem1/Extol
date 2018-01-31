@@ -5,6 +5,7 @@ class Devotion {
     var artist: String = ""
     var lyrics: String = ""
     var lyricsURL: String = ""
+    var spotifyURI: String = ""
     var scriptureSource: String = ""
     var scriptureText: String = ""
     var devotionText: String = ""
