@@ -10,5 +10,6 @@ class DevotionViewerModel {
         self.devotion.scriptureSource = "Psalm 51"
         self.devotion.scriptureText = "For I know my transgressions,\nand my sin is always before me"
         self.devotion.song = "White As Snow"
+        self.devotion.lyricsURL = "https://www.azlyrics.com/lyrics/jonforeman/whiteassnow.html"
     }
 }

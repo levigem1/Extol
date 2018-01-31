@@ -32,6 +32,14 @@ extension NSMutableAttributedString {
         return self
     }
     
+    @discardableResult func underline(_ text: String) -> NSMutableAttributedString {
+        let underlineString = NSAttributedString(string: text, attributes:
+            [.underlineStyle: NSUnderlineStyle.styleSingle.rawValue])
+        
+        append(underlineString)
+        return self
+    }
+    
     @discardableResult func normal(_ text: String) -> NSMutableAttributedString {
         let normal = NSAttributedString(string: text)
         append(normal)

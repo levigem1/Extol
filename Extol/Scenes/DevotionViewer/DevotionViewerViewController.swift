@@ -1,7 +1,8 @@
 import Foundation
 import UIKit
+import SafariServices
 
-class DevotionViewerViewController: UIViewController {
+class DevotionViewerViewController: UIViewController, SFSafariViewControllerDelegate {
     var viewModel:  DevotionViewerViewModel!
     
     @IBOutlet weak var devotionTitle: UILabel!
@@ -19,7 +20,7 @@ class DevotionViewerViewController: UIViewController {
         setDevotionTitle()
         setLyricsHeader()
         lyricsText.text = viewModel.devotion.lyrics
-        fullLyricsLink.titleLabel?.text = "Full Lyrics"
+        setFullLyricsButton()
         setScriptureHeader()
         setScriptureSource()
         scriptureText.text = viewModel.devotion.scriptureText
@@ -42,6 +43,13 @@ class DevotionViewerViewController: UIViewController {
         formattedString
             .bold("Lyrics", withSize: fontSize)
         lyricsHeader.attributedText = formattedString
+    }
+    
+    func setFullLyricsButton(){
+        let formattedString = NSMutableAttributedString()
+        formattedString
+            .underline("Full Lyrics")
+        fullLyricsLink.setAttributedTitle(formattedString, for: .normal)
     }
     
     func setScriptureHeader(){
@@ -80,6 +88,12 @@ class DevotionViewerViewController: UIViewController {
         return UIApplication.shared.canOpenURL(NSURL(string:"spotify:")! as URL)
     }
     
-    
+    @IBAction func fullLyricsButtonPressed(_ sender: Any) {
+        if let lyricsWebsite = URL(string: viewModel.devotion.lyricsURL) {
+            let safariVC = SFSafariViewController(url: lyricsWebsite)
+            self.present(safariVC, animated: true, completion: nil)
+            safariVC.delegate = self
+        }
+    }
 }
 
