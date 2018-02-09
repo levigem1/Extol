@@ -11,4 +11,9 @@ import UIKit
 
 class DevotionViewerTitleTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var devotionTitleHeaderLabel: UILabel!
+    
+    @IBAction func spotifyButtonPressed(_ sender: Any) {
+    }
+    
 }

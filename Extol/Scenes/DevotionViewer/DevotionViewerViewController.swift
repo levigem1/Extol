@@ -5,16 +5,8 @@ import SafariServices
 class DevotionViewerViewController: UIViewController, SFSafariViewControllerDelegate {
     var viewModel:  DevotionViewerViewModel!
     
-    @IBOutlet weak var devotionTitle: UILabel!
-    @IBOutlet weak var spotifyButton: UIButton!
-    @IBOutlet weak var lyricsHeader: UILabel!
-    @IBOutlet weak var lyricsText: UILabel!
-    @IBOutlet weak var fullLyricsLink: UIButton!
-    @IBOutlet weak var scriptureHeader: UILabel!
-    @IBOutlet weak var scriptureSource: UILabel!
-    @IBOutlet weak var scriptureText: UILabel!
-    @IBOutlet weak var devotionHeader: UILabel!
-    @IBOutlet weak var devotionText: UILabel!
+    @IBOutlet weak var devotionTableView: UITableView!
+    
     
     override func viewDidLoad() {
         setDevotionTitle()
@@ -110,3 +102,6 @@ class DevotionViewerViewController: UIViewController, SFSafariViewControllerDele
     }
 }
 
+extension DevotionViewerViewController: UITableViewDelegate, UITableViewDataSource {
+    
+}

@@ -37,6 +37,9 @@
                             <state key="normal" title="Button">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="fullLyricsLinkPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Erg-2x-wFA"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -61,6 +64,11 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="fullLyricsLink" destination="6BD-Ma-abC" id="i6n-xt-Y0F"/>
+                <outlet property="lyricsHeader" destination="sFA-wU-aPU" id="0o1-RT-fUw"/>
+                <outlet property="lyricsText" destination="1xi-Ld-3do" id="fXr-uw-QZL"/>
+            </connections>
             <point key="canvasLocation" x="25.5" y="-216.5"/>
         </view>
     </objects>

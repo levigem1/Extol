@@ -31,6 +31,9 @@
                     <inset key="contentEdgeInsets" minX="11" minY="4" maxX="2" maxY="4"/>
                     <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                     <state key="normal" title="Play" image="spotifylogowhite"/>
+                    <connections>
+                        <action selector="spotifyButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Cy7-ic-cIW"/>
+                    </connections>
                 </button>
             </subviews>
             <constraints>
@@ -43,6 +46,9 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="devotionTitleHeaderLabel" destination="WWj-eL-bQr" id="kQS-U0-IzF"/>
+            </connections>
             <point key="canvasLocation" x="25.5" y="-234"/>
         </view>
     </objects>

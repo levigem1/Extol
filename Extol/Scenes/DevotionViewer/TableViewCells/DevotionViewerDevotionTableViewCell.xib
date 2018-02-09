@@ -52,6 +52,10 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="devotionHeader" destination="KD0-DD-ts3" id="Wrt-I4-I5x"/>
+                <outlet property="devotionText" destination="mUx-rX-DWv" id="hfk-aa-68n"/>
+            </connections>
             <point key="canvasLocation" x="25.5" y="-239.5"/>
         </view>
     </objects>

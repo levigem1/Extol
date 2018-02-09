@@ -11,4 +11,10 @@ import UIKit
 
 class DevotionViewerScriptureTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var scriptureHeader: UILabel!
+    
+    @IBOutlet weak var scriptureSource: UILabel!
+    
+    @IBOutlet weak var scriptureText: UILabel!
+    
 }

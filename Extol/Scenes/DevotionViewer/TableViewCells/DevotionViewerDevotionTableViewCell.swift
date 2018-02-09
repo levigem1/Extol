@@ -11,5 +11,9 @@ import UIKit
 
 class DevotionViewerDevotionTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var devotionHeader: UILabel!
+    
+    @IBOutlet weak var devotionText: UILabel!
+    
 }
 

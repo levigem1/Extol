@@ -10,5 +10,14 @@ import Foundation
 import UIKit
 
 class DevotionViewerLyricsTableViewCell: UITableViewCell {
+    @IBOutlet weak var lyricsHeader: UILabel!
+    
+    @IBOutlet weak var lyricsText: UILabel!
+    
+    @IBOutlet weak var fullLyricsLink: UIButton!
+    
+    @IBAction func fullLyricsLinkPressed(_ sender: Any) {
+    }
+    
     
 }

@@ -61,6 +61,11 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="scriptureHeader" destination="QPr-zn-Lwg" id="uSB-9r-8A4"/>
+                <outlet property="scriptureSource" destination="wtx-cp-YWT" id="0rW-Cd-8lm"/>
+                <outlet property="scriptureText" destination="ysw-Ob-QAe" id="4e0-bn-yMw"/>
+            </connections>
             <point key="canvasLocation" x="25.5" y="-213"/>
         </view>
     </objects>
