@@ -17,7 +17,7 @@ class DevotionViewerDevotionTableViewCell: UITableViewCell {
         setDevotionHeader()
     }
     
-    func setDevotionHeader(){
+    private func setDevotionHeader(){
         let fontSize = devotionHeader.font.pointSize
         let formattedString = NSMutableAttributedString()
         formattedString

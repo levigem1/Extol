@@ -28,14 +28,14 @@ class DevotionViewerTitleTableViewCell: UITableViewCell {
         devotionTitleHeaderLabel.attributedText = formattedString
     }
     
-    func setSpotifyButton() {
+    private func setSpotifyButton() {
         spotifyButton.setTitle("Play", for: .normal)
         spotifyButton.layer.cornerRadius = 5
         spotifyButton.layer.borderWidth = 1
         spotifyButton.layer.borderColor = UIColor.white.cgColor
     }
     
-    @IBAction func spotifyButtonPressed(_ sender: Any) {
+    @IBAction private func spotifyButtonPressed(_ sender: Any) {
         guard let spotifyURI = spotifyURI else { return }
         if isSpotifyInstalled() {
             UIApplication.shared.open(NSURL(string:"spotify:track:\(spotifyURI)")! as URL, options: [:], completionHandler: nil)
@@ -45,7 +45,7 @@ class DevotionViewerTitleTableViewCell: UITableViewCell {
         }
     }
     
-    func isSpotifyInstalled() -> Bool {
+    private func isSpotifyInstalled() -> Bool {
         return UIApplication.shared.canOpenURL(NSURL(string:"spotify:")! as URL)
     }
 }

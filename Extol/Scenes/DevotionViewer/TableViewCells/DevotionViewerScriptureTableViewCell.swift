@@ -18,7 +18,7 @@ class DevotionViewerScriptureTableViewCell: UITableViewCell {
         setScriptureHeader()
     }
     
-    func setScriptureHeader(){
+    private func setScriptureHeader(){
         let fontSize = scriptureHeader.font.pointSize
         let formattedString = NSMutableAttributedString()
         formattedString

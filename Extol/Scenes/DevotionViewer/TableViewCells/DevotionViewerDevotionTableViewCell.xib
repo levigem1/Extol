@@ -44,6 +44,7 @@
                     </constraints>
                 </view>
             </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="7WT-sw-HUR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="9Wy-b5-Uej"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="7WT-sw-HUR" secondAttribute="bottom" constant="10" id="AvK-dI-P6N"/>

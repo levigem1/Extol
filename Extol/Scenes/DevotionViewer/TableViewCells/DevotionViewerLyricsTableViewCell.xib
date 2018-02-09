@@ -56,6 +56,7 @@
                     </constraints>
                 </view>
             </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Bxk-KR-LTh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="Gg7-iN-nAd"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Bxk-KR-LTh" secondAttribute="bottom" constant="45" id="O8Q-Qp-zWF"/>

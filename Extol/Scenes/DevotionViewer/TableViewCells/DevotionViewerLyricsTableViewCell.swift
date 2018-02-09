@@ -20,7 +20,7 @@ class DevotionViewerLyricsTableViewCell: UITableViewCell {
         setFullLyricsButton()
     }
     
-    func setLyricsHeader(){
+    private func setLyricsHeader(){
         let fontSize = lyricsHeader.font.pointSize
         let formattedString = NSMutableAttributedString()
         formattedString
@@ -28,14 +28,14 @@ class DevotionViewerLyricsTableViewCell: UITableViewCell {
         lyricsHeader.attributedText = formattedString
     }
     
-    func setFullLyricsButton(){
+    private func setFullLyricsButton(){
         let formattedString = NSMutableAttributedString()
         formattedString
             .underline("Full Lyrics")
         fullLyricsLink.setAttributedTitle(formattedString, for: .normal)
     }
     
-    @IBAction func fullLyricsLinkPressed(_ sender: Any) {
+    @IBAction private func fullLyricsLinkPressed(_ sender: Any) {
         guard let lyricsLink = lyricsLink else { return }
         UIApplication.shared.open(URL(string: lyricsLink)!)
     }
