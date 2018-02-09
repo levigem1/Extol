@@ -24,18 +24,8 @@ class SeasonsViewController: UIViewController {
         seasonsTableView.delegate = self
         seasonsTableView.dataSource = self
         seasonsTableView.separatorStyle = .none
-        seasonsTableView.register(UINib(nibName:"DevotionTableViewCell", bundle: nil), forCellReuseIdentifier: "DevotionTableViewCell")
         seasonsTableView.register(UINib(nibName:"ExtolTableViewHeader", bundle: nil), forCellReuseIdentifier: "ExtolTableViewHeader")
         seasonsTableView.register(UINib(nibName:"SeasonsTableViewCell", bundle: nil), forCellReuseIdentifier: "SeasonsTableViewCell")
-    }
-    
-    private func navigateToDevotionList(withDevotions devotions: [Devotion]) {
-        let storyboard = UIStoryboard(name: "DevotionList", bundle: nil)
-        let model = DevotionListModel(devotions: devotions)
-        let viewModel = DevotionListViewModel(model: model)
-        let destinationVC = storyboard.instantiateViewController(withIdentifier: "DevotionList") as! DevotionListViewController
-        destinationVC.viewModel = viewModel
-        self.navigationController?.pushViewController(destinationVC, animated: true)
     }
 }
 
@@ -61,7 +51,7 @@ extension SeasonsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let devotionsThisSeason: [Devotion] = self.viewModel.devotionsBySeason[indexPath.row]
-        self.navigateToDevotionList(withDevotions: devotionsThisSeason)
+        UIRouter.navigateToDevotionList(fromVC: self, withDevotions: devotionsThisSeason)
         self.seasonsTableView.deselectRow(at: indexPath, animated: false)
     }
     

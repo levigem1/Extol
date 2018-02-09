@@ -17,9 +17,23 @@
                     <view key="view" contentMode="scaleToFill" id="p4u-cn-vuM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="dNu-IF-rqs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ki3-Vz-LLX" firstAttribute="bottom" secondItem="dNu-IF-rqs" secondAttribute="bottom" id="BLr-bE-Nak"/>
+                            <constraint firstItem="ki3-Vz-LLX" firstAttribute="trailing" secondItem="dNu-IF-rqs" secondAttribute="trailing" id="EjW-WP-C3L"/>
+                            <constraint firstItem="dNu-IF-rqs" firstAttribute="top" secondItem="p4u-cn-vuM" secondAttribute="top" id="kjp-XV-p7G"/>
+                            <constraint firstItem="dNu-IF-rqs" firstAttribute="leading" secondItem="ki3-Vz-LLX" secondAttribute="leading" id="zzE-d3-cbt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ki3-Vz-LLX"/>
                     </view>
+                    <connections>
+                        <outlet property="artistsTableView" destination="dNu-IF-rqs" id="NOA-uJ-0W9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jn3-Cd-qMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

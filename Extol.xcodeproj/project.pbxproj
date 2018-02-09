@@ -15,6 +15,7 @@
 		993588E8202D7AF300B3A765 /* DevotionViewerLyricsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993588E7202D7AF300B3A765 /* DevotionViewerLyricsTableViewCell.swift */; };
 		993588EA202D7B3A00B3A765 /* DevotionViewerDevotionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 993588E9202D7B3A00B3A765 /* DevotionViewerDevotionTableViewCell.xib */; };
 		993588EC202D7B4B00B3A765 /* DevotionViewerDevotionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993588EB202D7B4B00B3A765 /* DevotionViewerDevotionTableViewCell.swift */; };
+		9935890A202E2CEE00B3A765 /* UIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99358909202E2CEE00B3A765 /* UIRouter.swift */; };
 		994217E0202002AE00522C47 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994217DF202002AE00522C47 /* Season.swift */; };
 		9963875A201C711500C285EA /* Seasons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99638759201C711500C285EA /* Seasons.storyboard */; };
 		9963875C201C712300C285EA /* SeasonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9963875B201C712300C285EA /* SeasonsViewController.swift */; };
@@ -69,6 +70,7 @@
 		993588E7202D7AF300B3A765 /* DevotionViewerLyricsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotionViewerLyricsTableViewCell.swift; sourceTree = "<group>"; };
 		993588E9202D7B3A00B3A765 /* DevotionViewerDevotionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DevotionViewerDevotionTableViewCell.xib; sourceTree = "<group>"; };
 		993588EB202D7B4B00B3A765 /* DevotionViewerDevotionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotionViewerDevotionTableViewCell.swift; sourceTree = "<group>"; };
+		99358909202E2CEE00B3A765 /* UIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRouter.swift; sourceTree = "<group>"; };
 		994217DF202002AE00522C47 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 		99638759201C711500C285EA /* Seasons.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Seasons.storyboard; sourceTree = "<group>"; };
 		9963875B201C712300C285EA /* SeasonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsViewController.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				99AB091F20117F4400FD4505 /* AppDelegate.swift */,
 				99AB09462011864F00FD4505 /* Devotion.swift */,
 				994217DF202002AE00522C47 /* Season.swift */,
+				99358909202E2CEE00B3A765 /* UIRouter.swift */,
 				99AB092620117F4400FD4505 /* Assets.xcassets */,
 				99AB092820117F4400FD4505 /* LaunchScreen.storyboard */,
 				99AB092B20117F4400FD4505 /* Info.plist */,
@@ -412,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9935890A202E2CEE00B3A765 /* UIRouter.swift in Sources */,
 				99638769201C719E00C285EA /* ArtistsModel.swift in Sources */,
 				993588E0202D7A6900B3A765 /* DevotionViewerTitleTableViewCell.swift in Sources */,
 				99AB092220117F4400FD4505 /* DevotionListViewController.swift in Sources */,

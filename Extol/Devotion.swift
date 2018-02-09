@@ -11,9 +11,15 @@ class Devotion {
     var devotionText: String = ""
     var season: Season?
     
-    init(withName name: String, content: String, forSeason season: Season) {
-        self.song = name
-        self.devotionText = content
+    init(withSong song: String, artist: String, lyrics: String, lyricsURL: String, spotifyURI: String, scriptureSource: String, scriptureText: String, devotionText: String, forSeason season: Season) {
+        self.song = song
+        self.artist = artist
+        self.lyrics = lyrics
+        self.lyricsURL = lyricsURL
+        self.spotifyURI = spotifyURI
+        self.scriptureSource = scriptureSource
+        self.scriptureText = scriptureText
+        self.devotionText = devotionText
         self.season = season
     }
 }
