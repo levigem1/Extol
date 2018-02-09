@@ -55,7 +55,7 @@ extension ArtistsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard viewModel.devotionsByArtist.indices.contains(indexPath.row) else { return }
         let devotionsForArtist = viewModel.devotionsByArtist[indexPath.row]
-        UIRouter.navigateToDevotionList(fromVC: self, withDevotions: devotionsForArtist)
+        UIRouter.navigateToDevotionList(fromVC: self, withDevotions: devotionsForArtist, headerTitle: devotionsForArtist.first?.artist, headerImage: #imageLiteral(resourceName: "SongsBackground"))
         self.artistsTableView.deselectRow(at: indexPath, animated: false)
     }
     

@@ -51,7 +51,8 @@ extension SeasonsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let devotionsThisSeason: [Devotion] = self.viewModel.devotionsBySeason[indexPath.row]
-        UIRouter.navigateToDevotionList(fromVC: self, withDevotions: devotionsThisSeason)
+        let season = devotionsThisSeason.first?.season
+        UIRouter.navigateToDevotionList(fromVC: self, withDevotions: devotionsThisSeason, headerTitle: season?.name, headerImage: season?.image)
         self.seasonsTableView.deselectRow(at: indexPath, animated: false)
     }
     
