@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		993588DE202D7A4900B3A765 /* DevotionViewerTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 993588DD202D7A4900B3A765 /* DevotionViewerTitleTableViewCell.xib */; };
+		993588E0202D7A6900B3A765 /* DevotionViewerTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993588DF202D7A6900B3A765 /* DevotionViewerTitleTableViewCell.swift */; };
+		993588E2202D7AA900B3A765 /* DevotionViewerScriptureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 993588E1202D7AA900B3A765 /* DevotionViewerScriptureTableViewCell.xib */; };
+		993588E4202D7ABA00B3A765 /* DevotionViewerScriptureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993588E3202D7ABA00B3A765 /* DevotionViewerScriptureTableViewCell.swift */; };
+		993588E6202D7AE400B3A765 /* DevotionViewerLyricsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 993588E5202D7AE400B3A765 /* DevotionViewerLyricsTableViewCell.xib */; };
+		993588E8202D7AF300B3A765 /* DevotionViewerLyricsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993588E7202D7AF300B3A765 /* DevotionViewerLyricsTableViewCell.swift */; };
+		993588EA202D7B3A00B3A765 /* DevotionViewerDevotionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 993588E9202D7B3A00B3A765 /* DevotionViewerDevotionTableViewCell.xib */; };
+		993588EC202D7B4B00B3A765 /* DevotionViewerDevotionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993588EB202D7B4B00B3A765 /* DevotionViewerDevotionTableViewCell.swift */; };
 		994217E0202002AE00522C47 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994217DF202002AE00522C47 /* Season.swift */; };
 		9963875A201C711500C285EA /* Seasons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99638759201C711500C285EA /* Seasons.storyboard */; };
 		9963875C201C712300C285EA /* SeasonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9963875B201C712300C285EA /* SeasonsViewController.swift */; };
@@ -53,6 +61,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		993588DD202D7A4900B3A765 /* DevotionViewerTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DevotionViewerTitleTableViewCell.xib; sourceTree = "<group>"; };
+		993588DF202D7A6900B3A765 /* DevotionViewerTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotionViewerTitleTableViewCell.swift; sourceTree = "<group>"; };
+		993588E1202D7AA900B3A765 /* DevotionViewerScriptureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DevotionViewerScriptureTableViewCell.xib; sourceTree = "<group>"; };
+		993588E3202D7ABA00B3A765 /* DevotionViewerScriptureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotionViewerScriptureTableViewCell.swift; sourceTree = "<group>"; };
+		993588E5202D7AE400B3A765 /* DevotionViewerLyricsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DevotionViewerLyricsTableViewCell.xib; sourceTree = "<group>"; };
+		993588E7202D7AF300B3A765 /* DevotionViewerLyricsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotionViewerLyricsTableViewCell.swift; sourceTree = "<group>"; };
+		993588E9202D7B3A00B3A765 /* DevotionViewerDevotionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DevotionViewerDevotionTableViewCell.xib; sourceTree = "<group>"; };
+		993588EB202D7B4B00B3A765 /* DevotionViewerDevotionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotionViewerDevotionTableViewCell.swift; sourceTree = "<group>"; };
 		994217DF202002AE00522C47 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 		99638759201C711500C285EA /* Seasons.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Seasons.storyboard; sourceTree = "<group>"; };
 		9963875B201C712300C285EA /* SeasonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +126,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		993588DC202D7A1B00B3A765 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				993588DD202D7A4900B3A765 /* DevotionViewerTitleTableViewCell.xib */,
+				993588DF202D7A6900B3A765 /* DevotionViewerTitleTableViewCell.swift */,
+				993588E5202D7AE400B3A765 /* DevotionViewerLyricsTableViewCell.xib */,
+				993588E7202D7AF300B3A765 /* DevotionViewerLyricsTableViewCell.swift */,
+				993588E1202D7AA900B3A765 /* DevotionViewerScriptureTableViewCell.xib */,
+				993588E3202D7ABA00B3A765 /* DevotionViewerScriptureTableViewCell.swift */,
+				993588E9202D7B3A00B3A765 /* DevotionViewerDevotionTableViewCell.xib */,
+				993588EB202D7B4B00B3A765 /* DevotionViewerDevotionTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 		99638758201C70EF00C285EA /* Seasons */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +266,7 @@
 				99800D22201D944B00CAEA5F /* DevotionViewerModel.swift */,
 				99800D24201D945500CAEA5F /* DevotionViewerViewModel.swift */,
 				99800D26201D946100CAEA5F /* DevotionViewerViewController.swift */,
+				993588DC202D7A1B00B3A765 /* TableViewCells */,
 			);
 			path = DevotionViewer;
 			sourceTree = "<group>";
@@ -341,16 +373,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				99800D1F201D65BA00CAEA5F /* SeasonsTableViewCell.xib in Resources */,
+				993588EA202D7B3A00B3A765 /* DevotionViewerDevotionTableViewCell.xib in Resources */,
 				99800D14201CEBCA00CAEA5F /* HomePage.storyboard in Resources */,
 				99800D21201D943A00CAEA5F /* DevotionViewer.storyboard in Resources */,
 				99800D16201CF3B400CAEA5F /* ExtolTableViewHeader.xib in Resources */,
 				99B8E06D201C483E00F5E545 /* TabBar.storyboard in Resources */,
 				99AB092A20117F4400FD4505 /* LaunchScreen.storyboard in Resources */,
 				99AB094A20118BCA00FD4505 /* DevotionTableViewCell.xib in Resources */,
+				993588DE202D7A4900B3A765 /* DevotionViewerTitleTableViewCell.xib in Resources */,
 				99638765201C718200C285EA /* Artists.storyboard in Resources */,
 				9963875A201C711500C285EA /* Seasons.storyboard in Resources */,
 				99AB092720117F4400FD4505 /* Assets.xcassets in Resources */,
 				99AB092520117F4400FD4505 /* DevotionList.storyboard in Resources */,
+				993588E2202D7AA900B3A765 /* DevotionViewerScriptureTableViewCell.xib in Resources */,
+				993588E6202D7AE400B3A765 /* DevotionViewerLyricsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,16 +405,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				99638769201C719E00C285EA /* ArtistsModel.swift in Sources */,
+				993588E0202D7A6900B3A765 /* DevotionViewerTitleTableViewCell.swift in Sources */,
 				99AB092220117F4400FD4505 /* DevotionListViewController.swift in Sources */,
 				99800D27201D946100CAEA5F /* DevotionViewerViewController.swift in Sources */,
 				9963875C201C712300C285EA /* SeasonsViewController.swift in Sources */,
+				993588EC202D7B4B00B3A765 /* DevotionViewerDevotionTableViewCell.swift in Sources */,
 				99B8E070201C4D1300F5E545 /* HomePageViewController.swift in Sources */,
+				993588E4202D7ABA00B3A765 /* DevotionViewerScriptureTableViewCell.swift in Sources */,
 				9963875E201C712E00C285EA /* SeasonsViewModel.swift in Sources */,
 				99AB094C20118BD800FD4505 /* DevotionTableViewCell.swift in Sources */,
 				99AB0943201185EF00FD4505 /* DevotionListViewModel.swift in Sources */,
 				99800D23201D944B00CAEA5F /* DevotionViewerModel.swift in Sources */,
 				99800D19201CF48500CAEA5F /* ExtolTableViewHeader.swift in Sources */,
 				99AB092020117F4400FD4505 /* AppDelegate.swift in Sources */,
+				993588E8202D7AF300B3A765 /* DevotionViewerLyricsTableViewCell.swift in Sources */,
 				99638763201C717500C285EA /* ArtistsViewController.swift in Sources */,
 				99800D25201D945500CAEA5F /* DevotionViewerViewModel.swift in Sources */,
 				99AB09472011864F00FD4505 /* Devotion.swift in Sources */,
