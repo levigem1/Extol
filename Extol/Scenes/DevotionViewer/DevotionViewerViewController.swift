@@ -56,6 +56,7 @@ extension DevotionViewerViewController: UITableViewDelegate, UITableViewDataSour
         cell.backgroundColor = viewModel.backgroundColor
         cell.setDevotionTitle(forSongName: viewModel.devotion.song, andArtist: viewModel.devotion.artist)
         cell.spotifyURI = viewModel.devotion.spotifyURI
+        cell.selectionStyle = .none
         return cell
     }
     
@@ -64,6 +65,7 @@ extension DevotionViewerViewController: UITableViewDelegate, UITableViewDataSour
         cell.backgroundColor = viewModel.backgroundColor
         cell.lyricsText.text = viewModel.devotion.lyrics
         cell.lyricsLink = viewModel.devotion.lyricsURL
+        cell.selectionStyle = .none
         return cell
     }
     
