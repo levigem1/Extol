@@ -12,32 +12,41 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="phK-Bu-Gkp" customClass="DevotionTableViewCell" customModule="Extol" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="64" id="phK-Bu-Gkp" customClass="DevotionTableViewCell" customModule="Extol" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="phK-Bu-Gkp" id="qtV-dL-scq">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="60.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ly7-k9-3kX">
-                        <rect key="frame" x="15" y="11" width="344" height="22"/>
+                        <rect key="frame" x="15" y="11" width="344" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.83533084390000001" green="0.83155411479999997" blue="0.82305830719999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dK0-g2-Ujb">
+                        <rect key="frame" x="15" y="33.5" width="33" height="16"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <color key="textColor" red="0.50191473959999999" green="0.50199031829999996" blue="0.50189822910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="ly7-k9-3kX" secondAttribute="bottom" id="UCi-Vk-oCH"/>
+                    <constraint firstItem="dK0-g2-Ujb" firstAttribute="top" secondItem="ly7-k9-3kX" secondAttribute="bottom" constant="2" id="Y5W-kO-wxi"/>
+                    <constraint firstItem="dK0-g2-Ujb" firstAttribute="bottom" secondItem="qtV-dL-scq" secondAttribute="bottomMargin" id="Y6v-ga-eSk"/>
                     <constraint firstItem="ly7-k9-3kX" firstAttribute="leading" secondItem="qtV-dL-scq" secondAttribute="leading" constant="15" id="aEV-kx-qfr"/>
+                    <constraint firstItem="dK0-g2-Ujb" firstAttribute="leading" secondItem="qtV-dL-scq" secondAttribute="leading" constant="15" id="urd-mc-qVL"/>
                     <constraint firstItem="ly7-k9-3kX" firstAttribute="top" secondItem="qtV-dL-scq" secondAttribute="topMargin" id="vl6-s1-Abx"/>
                     <constraint firstAttribute="trailingMargin" secondItem="ly7-k9-3kX" secondAttribute="trailing" id="x0i-fc-zLP"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="artist" destination="dK0-g2-Ujb" id="uSM-ZK-kDz"/>
                 <outlet property="name" destination="ly7-k9-3kX" id="YSM-gm-crC"/>
             </connections>
-            <point key="canvasLocation" x="-11" y="-19"/>
+            <point key="canvasLocation" x="-11.5" y="-9"/>
         </tableViewCell>
     </objects>
 </document>

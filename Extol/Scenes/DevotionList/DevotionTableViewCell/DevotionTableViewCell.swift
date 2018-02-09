@@ -11,6 +11,8 @@ import UIKit
 
 class DevotionTableViewCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var artist: UILabel!
+    
     override func awakeFromNib() {
         let view = UIView()
         view.backgroundColor = UIColor.darkGray
@@ -19,5 +21,6 @@ class DevotionTableViewCell: UITableViewCell {
     
     override func prepareForReuse() {
         name.text = ""
+        artist.text = ""
     }
 }
