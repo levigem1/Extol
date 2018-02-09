@@ -55,6 +55,7 @@ extension SeasonsViewController: UITableViewDataSource, UITableViewDelegate {
         cell.title.text = season?.name
         cell.thumbnail?.image = season?.image
         cell.setDevotionCountLabel(forNumberOfDevotions: devotionsThisSeason.count)
+        if indexPath.row % 2 == 1 { cell.flipContent() }
         return cell
     }
     

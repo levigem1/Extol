@@ -27,6 +27,13 @@ class SeasonsTableViewCell: UITableViewCell {
         devotionCount.text = devotionCountText
     }
     
+    func flipContent() {
+        self.contentView.layer.setAffineTransform(CGAffineTransform(scaleX: -1, y: 1))
+        self.title.layer.setAffineTransform(CGAffineTransform(scaleX: -1, y: 1))
+        self.thumbnail.layer.setAffineTransform(CGAffineTransform(scaleX: -1, y: 1))
+        self.devotionCount.layer.setAffineTransform(CGAffineTransform(scaleX: -1, y: 1))
+    }
+    
     private func makePluralIfNecessary(string: inout String, count: Int) {
         if count > 1 {
             string.append("s")
