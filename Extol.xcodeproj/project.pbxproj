@@ -44,8 +44,8 @@
 		99AB0943201185EF00FD4505 /* DevotionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB0942201185EF00FD4505 /* DevotionListViewModel.swift */; };
 		99AB0945201185FD00FD4505 /* DevotionListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB0944201185FD00FD4505 /* DevotionListModel.swift */; };
 		99AB09472011864F00FD4505 /* Devotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB09462011864F00FD4505 /* Devotion.swift */; };
-		99AB094A20118BCA00FD4505 /* DevotionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99AB094920118BCA00FD4505 /* DevotionTableViewCell.xib */; };
-		99AB094C20118BD800FD4505 /* DevotionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB094B20118BD800FD4505 /* DevotionTableViewCell.swift */; };
+		99AB094A20118BCA00FD4505 /* ExtolTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99AB094920118BCA00FD4505 /* ExtolTableViewCell.xib */; };
+		99AB094C20118BD800FD4505 /* ExtolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AB094B20118BD800FD4505 /* ExtolTableViewCell.swift */; };
 		99B8E06D201C483E00F5E545 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B8E06C201C483E00F5E545 /* TabBar.storyboard */; };
 		99B8E070201C4D1300F5E545 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B8E06F201C4D1300F5E545 /* HomePageViewController.swift */; };
 /* End PBXBuildFile section */
@@ -102,8 +102,8 @@
 		99AB0942201185EF00FD4505 /* DevotionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotionListViewModel.swift; sourceTree = "<group>"; };
 		99AB0944201185FD00FD4505 /* DevotionListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotionListModel.swift; sourceTree = "<group>"; };
 		99AB09462011864F00FD4505 /* Devotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devotion.swift; sourceTree = "<group>"; };
-		99AB094920118BCA00FD4505 /* DevotionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DevotionTableViewCell.xib; sourceTree = "<group>"; };
-		99AB094B20118BD800FD4505 /* DevotionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotionTableViewCell.swift; sourceTree = "<group>"; };
+		99AB094920118BCA00FD4505 /* ExtolTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExtolTableViewCell.xib; sourceTree = "<group>"; };
+		99AB094B20118BD800FD4505 /* ExtolTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtolTableViewCell.swift; sourceTree = "<group>"; };
 		99B8E06C201C483E00F5E545 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		99B8E06F201C4D1300F5E545 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +139,15 @@
 				993588EB202D7B4B00B3A765 /* DevotionViewerDevotionTableViewCell.swift */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		99358908202E2C0300B3A765 /* ExtolTableViewHeader */ = {
+			isa = PBXGroup;
+			children = (
+				99800D15201CF3B400CAEA5F /* ExtolTableViewHeader.xib */,
+				99800D18201CF48500CAEA5F /* ExtolTableViewHeader.swift */,
+			);
+			path = ExtolTableViewHeader;
 			sourceTree = "<group>";
 		};
 		99638758201C70EF00C285EA /* Seasons */ = {
@@ -177,8 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				99B8E06C201C483E00F5E545 /* TabBar.storyboard */,
-				99800D15201CF3B400CAEA5F /* ExtolTableViewHeader.xib */,
-				99800D18201CF48500CAEA5F /* ExtolTableViewHeader.swift */,
+				99358908202E2C0300B3A765 /* ExtolTableViewHeader */,
+				99AB094820118B9E00FD4505 /* ExtolTableViewCell */,
 			);
 			path = AppWide;
 			sourceTree = "<group>";
@@ -254,7 +263,6 @@
 				99AB0944201185FD00FD4505 /* DevotionListModel.swift */,
 				99AB0942201185EF00FD4505 /* DevotionListViewModel.swift */,
 				99AB092120117F4400FD4505 /* DevotionListViewController.swift */,
-				99AB094820118B9E00FD4505 /* DevotionTableViewCell */,
 			);
 			path = DevotionList;
 			sourceTree = "<group>";
@@ -271,13 +279,13 @@
 			path = DevotionViewer;
 			sourceTree = "<group>";
 		};
-		99AB094820118B9E00FD4505 /* DevotionTableViewCell */ = {
+		99AB094820118B9E00FD4505 /* ExtolTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				99AB094920118BCA00FD4505 /* DevotionTableViewCell.xib */,
-				99AB094B20118BD800FD4505 /* DevotionTableViewCell.swift */,
+				99AB094920118BCA00FD4505 /* ExtolTableViewCell.xib */,
+				99AB094B20118BD800FD4505 /* ExtolTableViewCell.swift */,
 			);
-			path = DevotionTableViewCell;
+			path = ExtolTableViewCell;
 			sourceTree = "<group>";
 		};
 		99B8E06E201C496D00F5E545 /* HomePage */ = {
@@ -379,7 +387,7 @@
 				99800D16201CF3B400CAEA5F /* ExtolTableViewHeader.xib in Resources */,
 				99B8E06D201C483E00F5E545 /* TabBar.storyboard in Resources */,
 				99AB092A20117F4400FD4505 /* LaunchScreen.storyboard in Resources */,
-				99AB094A20118BCA00FD4505 /* DevotionTableViewCell.xib in Resources */,
+				99AB094A20118BCA00FD4505 /* ExtolTableViewCell.xib in Resources */,
 				993588DE202D7A4900B3A765 /* DevotionViewerTitleTableViewCell.xib in Resources */,
 				99638765201C718200C285EA /* Artists.storyboard in Resources */,
 				9963875A201C711500C285EA /* Seasons.storyboard in Resources */,
@@ -413,7 +421,7 @@
 				99B8E070201C4D1300F5E545 /* HomePageViewController.swift in Sources */,
 				993588E4202D7ABA00B3A765 /* DevotionViewerScriptureTableViewCell.swift in Sources */,
 				9963875E201C712E00C285EA /* SeasonsViewModel.swift in Sources */,
-				99AB094C20118BD800FD4505 /* DevotionTableViewCell.swift in Sources */,
+				99AB094C20118BD800FD4505 /* ExtolTableViewCell.swift in Sources */,
 				99AB0943201185EF00FD4505 /* DevotionListViewModel.swift in Sources */,
 				99800D23201D944B00CAEA5F /* DevotionViewerModel.swift in Sources */,
 				99800D19201CF48500CAEA5F /* ExtolTableViewHeader.swift in Sources */,

@@ -28,7 +28,7 @@ class DevotionListViewController: UIViewController {
     func setUpTableView(){
         devotionsTableView.delegate = self
         devotionsTableView.dataSource = self
-        devotionsTableView.register(UINib(nibName:"DevotionTableViewCell", bundle: nil), forCellReuseIdentifier: "DevotionTableViewCell")
+        devotionsTableView.register(UINib(nibName:"ExtolTableViewCell", bundle: nil), forCellReuseIdentifier: "ExtolTableViewCell")
         devotionsTableView.register(UINib(nibName:"ExtolTableViewHeader", bundle: nil), forCellReuseIdentifier: "ExtolTableViewHeader")
     }
     
@@ -52,11 +52,11 @@ extension DevotionListViewController: UITableViewDataSource, UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)->UITableViewCell{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DevotionTableViewCell") as! DevotionTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ExtolTableViewCell") as! ExtolTableViewCell
         guard viewModel.devotions.indices.contains(indexPath.row) else { return cell }
         let devotion = viewModel.devotions[indexPath.row]
-        cell.name.text = devotion.song
-        cell.artist.text = devotion.artist
+        cell.title.text = devotion.song
+        cell.subText.text = devotion.artist
         return cell
     }
     
