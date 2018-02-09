@@ -13,25 +13,25 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DevotionViewerScriptureTableViewCell" customModule="Extol" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="106.5"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DT1-xt-ZiR">
-                    <rect key="frame" x="15" y="0.0" width="345" height="96"/>
+                    <rect key="frame" x="15" y="0.0" width="345" height="66.5"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPr-zn-Lwg">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPr-zn-Lwg">
                             <rect key="frame" x="0.0" y="0.0" width="345" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.83533084390000001" green="0.83155411479999997" blue="0.82305830719999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtx-cp-YWT">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtx-cp-YWT">
                             <rect key="frame" x="0.0" y="25.5" width="345" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.83533084390000001" green="0.83155411479999997" blue="0.82305830719999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysw-Ob-QAe">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysw-Ob-QAe">
                             <rect key="frame" x="0.0" y="46" width="345" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.83533084390000001" green="0.83155411479999997" blue="0.82305830719999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -42,10 +42,10 @@
                     <constraints>
                         <constraint firstItem="QPr-zn-Lwg" firstAttribute="leading" secondItem="DT1-xt-ZiR" secondAttribute="leading" id="7ab-ND-PKp"/>
                         <constraint firstItem="ysw-Ob-QAe" firstAttribute="leading" secondItem="DT1-xt-ZiR" secondAttribute="leading" id="FOi-JI-a5P"/>
+                        <constraint firstAttribute="bottom" secondItem="ysw-Ob-QAe" secondAttribute="bottom" id="Pvw-eU-DXq"/>
                         <constraint firstAttribute="trailing" secondItem="wtx-cp-YWT" secondAttribute="trailing" id="Z9B-om-cWH"/>
                         <constraint firstItem="wtx-cp-YWT" firstAttribute="leading" secondItem="DT1-xt-ZiR" secondAttribute="leading" id="bpw-pn-EXa"/>
                         <constraint firstItem="wtx-cp-YWT" firstAttribute="top" secondItem="QPr-zn-Lwg" secondAttribute="bottom" constant="5" id="kdL-3Y-lOx"/>
-                        <constraint firstAttribute="bottom" secondItem="ysw-Ob-QAe" secondAttribute="bottom" id="p8r-99-ndx"/>
                         <constraint firstItem="QPr-zn-Lwg" firstAttribute="top" secondItem="DT1-xt-ZiR" secondAttribute="top" id="qDa-zU-L2t"/>
                         <constraint firstAttribute="trailing" secondItem="QPr-zn-Lwg" secondAttribute="trailing" id="v03-PA-fVN"/>
                         <constraint firstAttribute="trailing" secondItem="ysw-Ob-QAe" secondAttribute="trailing" id="wDT-ae-F7m"/>
