@@ -1,11 +1,12 @@
 import UIKit
 
 class SeasonsViewController: UIViewController {
-    var viewModel = SeasonsViewModel()
+    var viewModel: SeasonsViewModel!
     @IBOutlet weak var seasonsTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel = SeasonsViewModel()
         setUpTableView()
         self.navigationController?.navigationBar.isHidden = true
         seasonsTableView.correctContentInset()

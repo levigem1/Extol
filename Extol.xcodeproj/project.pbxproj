@@ -16,6 +16,7 @@
 		993588EA202D7B3A00B3A765 /* DevotionViewerDevotionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 993588E9202D7B3A00B3A765 /* DevotionViewerDevotionTableViewCell.xib */; };
 		993588EC202D7B4B00B3A765 /* DevotionViewerDevotionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993588EB202D7B4B00B3A765 /* DevotionViewerDevotionTableViewCell.swift */; };
 		9935890A202E2CEE00B3A765 /* UIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99358909202E2CEE00B3A765 /* UIRouter.swift */; };
+		9935890C202E42A200B3A765 /* DevotionLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9935890B202E42A200B3A765 /* DevotionLoader.swift */; };
 		994217E0202002AE00522C47 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994217DF202002AE00522C47 /* Season.swift */; };
 		9963875A201C711500C285EA /* Seasons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99638759201C711500C285EA /* Seasons.storyboard */; };
 		9963875C201C712300C285EA /* SeasonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9963875B201C712300C285EA /* SeasonsViewController.swift */; };
@@ -71,6 +72,7 @@
 		993588E9202D7B3A00B3A765 /* DevotionViewerDevotionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DevotionViewerDevotionTableViewCell.xib; sourceTree = "<group>"; };
 		993588EB202D7B4B00B3A765 /* DevotionViewerDevotionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotionViewerDevotionTableViewCell.swift; sourceTree = "<group>"; };
 		99358909202E2CEE00B3A765 /* UIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRouter.swift; sourceTree = "<group>"; };
+		9935890B202E42A200B3A765 /* DevotionLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevotionLoader.swift; sourceTree = "<group>"; };
 		994217DF202002AE00522C47 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 		99638759201C711500C285EA /* Seasons.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Seasons.storyboard; sourceTree = "<group>"; };
 		9963875B201C712300C285EA /* SeasonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonsViewController.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				99800D29201E9A0300CAEA5F /* Extensions */,
 				99AB093F20117F9400FD4505 /* Scenes */,
 				99AB091F20117F4400FD4505 /* AppDelegate.swift */,
+				9935890B202E42A200B3A765 /* DevotionLoader.swift */,
 				99AB09462011864F00FD4505 /* Devotion.swift */,
 				994217DF202002AE00522C47 /* Season.swift */,
 				99358909202E2CEE00B3A765 /* UIRouter.swift */,
@@ -440,6 +443,7 @@
 				99638767201C718F00C285EA /* ArtistsViewModel.swift in Sources */,
 				99800D1D201D659D00CAEA5F /* SeasonsTableViewCell.swift in Sources */,
 				994217E0202002AE00522C47 /* Season.swift in Sources */,
+				9935890C202E42A200B3A765 /* DevotionLoader.swift in Sources */,
 				99800D2D201EEDAE00CAEA5F /* UITableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

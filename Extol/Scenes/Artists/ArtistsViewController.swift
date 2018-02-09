@@ -10,11 +10,12 @@ import Foundation
 import UIKit
 
 class ArtistsViewController: UIViewController {
-    var viewModel = ArtistsViewModel()
+    var viewModel: ArtistsViewModel!
     @IBOutlet weak var artistsTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel = ArtistsViewModel()
         setUpTableView()
         self.navigationController?.navigationBar.isHidden = true
         artistsTableView.correctContentInset()
