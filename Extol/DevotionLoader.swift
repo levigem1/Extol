@@ -17,18 +17,30 @@ class DevotionLoader {
     func getDevotionsSortedByArtist() -> [[Devotion]] {
         var devotionsByArtist = [[Devotion]]()
         for devotion in devotions {
-            var foundMatch = false
-            for (index, devotionByArtist) in devotionsByArtist.enumerated() where foundMatch == false {
-                if devotion.artist == devotionByArtist.first?.artist {
-                    devotionsByArtist[index].append(devotion)
-                    foundMatch = true
-                }
-            }
-            if foundMatch == false {
-                devotionsByArtist.append([devotion])
+            let alreadyHasSection = addDevotionToExistingSectionIfPossible(devotion: devotion, devotionsByArtist: &devotionsByArtist)
+            if alreadyHasSection == false {
+                addDevotionToNewSection(devotion: devotion, devotionsByArtist: &devotionsByArtist)
             }
         }
         return devotionsByArtist
+    }
+    
+    func addDevotionToNewSection(devotion: Devotion, devotionsByArtist: inout [[Devotion]]) {
+        if let index = devotionsByArtist.index(where: { ($0.first?.artist) ?? "" > devotion.artist }) {
+            devotionsByArtist.insert([devotion], at: index)
+        } else {
+            devotionsByArtist.append([devotion])
+        }
+    }
+    
+    func addDevotionToExistingSectionIfPossible(devotion: Devotion, devotionsByArtist: inout [[Devotion]])  -> Bool {
+        for (index, devotionByArtist) in devotionsByArtist.enumerated() {
+            if devotion.artist == devotionByArtist.first?.artist {
+                devotionsByArtist[index].append(devotion)
+                return true
+            }
+        }
+        return false
     }
     
     func loadAllDevotions() {
