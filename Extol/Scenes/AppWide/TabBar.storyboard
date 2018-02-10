@@ -40,7 +40,7 @@
         <scene sceneID="hmC-sV-kH8">
             <objects>
                 <tabBarController id="r5G-xh-y47" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SuL-Zg-Oxh">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="SuL-Zg-Oxh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.20430567860000001" green="0.18825587630000001" blue="0.183925271" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -116,7 +116,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ArtistIcon" width="25" height="25"/>
+        <image name="ArtistIcon" width="25" height="24"/>
         <image name="ExtolDarkIcon" width="20" height="25"/>
         <image name="SeasonsIcon" width="25" height="20"/>
     </resources>
