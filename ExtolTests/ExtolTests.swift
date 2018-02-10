@@ -81,13 +81,11 @@ class ExtolTests: XCTestCase {
         assert(devotionsByArtist.last![0].artist == artist1)
     }
     
-    func testAddDevotionToNewArtistSection() {
+    func testAddDevotionToNewArtistSection_AddWhenItsEmpty() {
         // set up
         let devotionLoader = DevotionLoader()
         var devotionsByArtist = [[Devotion]]()
         let devotion1 = Devotion(withSong: song, artist: artist, lyrics: lyrics, lyricsURL: lyricsURL, spotifyURI: spotifyURI, scriptureSource: scriptureSource, scriptureText: scriptureText, devotionText: devotionText, forSeason: season)
-        let devotion2 = Devotion(withSong: song, artist: artist, lyrics: lyrics, lyricsURL: lyricsURL, spotifyURI: spotifyURI, scriptureSource: scriptureSource, scriptureText: scriptureText, devotionText: devotionText, forSeason: season)
-        devotionLoader.devotions = [devotion1, devotion2]
         
         // execute
         devotionLoader.addDevotionToNewArtistSection(devotion: devotion1, devotionsByArtist: &devotionsByArtist)
@@ -95,6 +93,72 @@ class ExtolTests: XCTestCase {
         // result
         assert(devotionsByArtist.first?.first?.artist == artist)
         assert(devotionsByArtist.first?.count == 1)
+    }
+    
+    func testAddDevotionToNewArtistSection_AddWithEarlierArtistAlreadyThere() {
+        // set up
+        let devotionLoader = DevotionLoader()
+        let artist1 = "a artist"
+        let artist2 = "z artist"
+        
+        let devotion1 = Devotion(withSong: song, artist: artist1, lyrics: lyrics, lyricsURL: lyricsURL, spotifyURI: spotifyURI, scriptureSource: scriptureSource, scriptureText: scriptureText, devotionText: devotionText, forSeason: season)
+        
+        var devotionsByArtist = [[devotion1]]
+        
+        let devotion2 = Devotion(withSong: song, artist: artist2, lyrics: lyrics, lyricsURL: lyricsURL, spotifyURI: spotifyURI, scriptureSource: scriptureSource, scriptureText: scriptureText, devotionText: devotionText, forSeason: season)
+        
+        
+        // execute
+        devotionLoader.addDevotionToNewArtistSection(devotion: devotion2, devotionsByArtist: &devotionsByArtist)
+        
+        // result
+        assert(devotionsByArtist.first?.first?.artist == artist1)
+        assert(devotionsByArtist.last?.first?.artist == artist2)
+    }
+    
+    func testAddDevotionToNewArtistSection_AddWithLaterArtistAlreadyThere() {
+        // set up
+        let devotionLoader = DevotionLoader()
+        let artist1 = "z artist"
+        let artist2 = "a artist"
+        
+        let devotion1 = Devotion(withSong: song, artist: artist1, lyrics: lyrics, lyricsURL: lyricsURL, spotifyURI: spotifyURI, scriptureSource: scriptureSource, scriptureText: scriptureText, devotionText: devotionText, forSeason: season)
+        
+        var devotionsByArtist = [[devotion1]]
+        
+        let devotion2 = Devotion(withSong: song, artist: artist2, lyrics: lyrics, lyricsURL: lyricsURL, spotifyURI: spotifyURI, scriptureSource: scriptureSource, scriptureText: scriptureText, devotionText: devotionText, forSeason: season)
+        
+        
+        // execute
+        devotionLoader.addDevotionToNewArtistSection(devotion: devotion2, devotionsByArtist: &devotionsByArtist)
+        
+        // result
+        assert(devotionsByArtist.first?.first?.artist == artist2)
+        assert(devotionsByArtist.last?.first?.artist == artist1)
+    }
+    
+    func testAddDevotionToNewArtistSection_AddToTheMiddle() {
+        // set up
+        let devotionLoader = DevotionLoader()
+        let earlyArtist = "a artist"
+        let middleArtist = "f artist"
+        let lateArtist = "z artist"
+        
+        let devotionEarly = Devotion(withSong: song, artist: earlyArtist, lyrics: lyrics, lyricsURL: lyricsURL, spotifyURI: spotifyURI, scriptureSource: scriptureSource, scriptureText: scriptureText, devotionText: devotionText, forSeason: season)
+        let devotionLate = Devotion(withSong: song, artist: lateArtist, lyrics: lyrics, lyricsURL: lyricsURL, spotifyURI: spotifyURI, scriptureSource: scriptureSource, scriptureText: scriptureText, devotionText: devotionText, forSeason: season)
+        
+        var devotionsByArtist = [[devotionEarly],[devotionLate]]
+        
+        let devotionMiddle = Devotion(withSong: song, artist: middleArtist, lyrics: lyrics, lyricsURL: lyricsURL, spotifyURI: spotifyURI, scriptureSource: scriptureSource, scriptureText: scriptureText, devotionText: devotionText, forSeason: season)
+        
+        
+        // execute
+        devotionLoader.addDevotionToNewArtistSection(devotion: devotionMiddle, devotionsByArtist: &devotionsByArtist)
+        
+        // result
+        assert(devotionsByArtist.first?.first?.artist == earlyArtist)
+        assert(devotionsByArtist[1].first?.artist == middleArtist)
+        assert(devotionsByArtist.last?.first?.artist == lateArtist)
     }
     
     func testPerformanceExample() {
