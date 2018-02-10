@@ -92,12 +92,12 @@ class DevotionLoader {
         
         song = "King Of My Heart"
         artist = "John Mark McMillan"
-        lyrics = "Let the King of my heart\nBe the mountain where I run\nThe fountain I drink from"
+        lyrics = "Let the King of my heart\nBe the mountain where I run\nThe fountain I drink from\nOh-oh, He is my song\nLet the King of my heart\nBe the shadow where I hide\nThe ransom for my life\nOh-oh, He is my song"
         lyricsURL = "http://www.worshiptogether.com/songs/king-of-my-heart-john-mark-mcmillan/"
         spotifyURI = "5OAHk4SXmhIjBhtLMVPllV"
         scriptureSource = "Psalm 73:26"
-        scriptureText = "We mess up. Daily. If we were to try out of our own strength to be holy and to please our God, we would fail every time. Thankfully, we serve a God who does the work for us. He makes our brokenness beautiful and separates us from our sin. He teaches us to delight in holiness. When our faith becomes lifeless and weak and we're far from Him, He reminds us of the incredible joy of His salvation. When guilt and shame are crippling, He covers us in forgiveness. The only sacrifice He wants  is for us to come before Him with a broken spirit and repentant heart. If we truly desire change, He will work in us.  Regardless of where we've been or what we've done, the Lord can and will create clean hearts in us, He will erase all of our sins, and He will always cover us in His unfailing mercy and compassion. Praise Him, because turns our broken lives into beautiful creations!"
-        devotionText = "Great devotion!"
+        scriptureText = "My flesh and my heart may fail, \nbut God is the strength of my heart and my portion forever."
+        devotionText = "We mess up. Daily. If we were to try out of our own strength to be holy and to please our God, we would fail every time. Thankfully, we serve a God who does the work for us. He makes our brokenness beautiful and separates us from our sin. He teaches us to delight in holiness. When our faith becomes lifeless and weak and we're far from Him, He reminds us of the incredible joy of His salvation. When guilt and shame are crippling, He covers us in forgiveness. The only sacrifice He wants  is for us to come before Him with a broken spirit and repentant heart. If we truly desire change, He will work in us.  Regardless of where we've been or what we've done, the Lord can and will create clean hearts in us, He will erase all of our sins, and He will always cover us in His unfailing mercy and compassion. Praise Him, because turns our broken lives into beautiful creations!"
         season = .solitude
         
         addDevotion(song: &song, artist: &artist, lyrics: &lyrics, lyricsURL: &lyricsURL, spotifyURI: &spotifyURI, scriptureSource: &scriptureSource, scriptureText: &scriptureText, devotionText: &devotionText, season: season)
