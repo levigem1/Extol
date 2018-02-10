@@ -54,7 +54,31 @@ class DevotionLoader {
         var devotionText: String = ""
         var season: Season!
         
+        song = "Amazing Grace"
+        artist = "Cory Asbury"
+        lyrics = "Before I spoke a word,\nYou were singing over me\nYou have been so, so good to me"
+        lyricsURL = "https://bethelmusic.com/chords-and-lyrics/reckless-love/"
+        spotifyURI = "0rH0mprtecH3grD9HFM5AD"
+        scriptureSource = "Luke 15"
+        scriptureText = "'My son', the father said,\n‘you are always with me,\nand everything I have is yours'"
+        devotionText = "We mess up. Daily. If we were to try out of our own strength to be holy and to please our God, we would fail every time. Thankfully, we serve a God who does the work for us. He makes our brokenness beautiful and separates us from our sin. He teaches us to delight in holiness. When our faith becomes lifeless and weak and we're far from Him, He reminds us of the incredible joy of His salvation. When guilt and shame are crippling, He covers us in forgiveness. The only sacrifice He wants  is for us to come before Him with a broken spirit and repentant heart. If we truly desire change, He will work in us.  Regardless of where we've been or what we've done, the Lord can and will create clean hearts in us, He will erase all of our sins, and He will always cover us in His unfailing mercy and compassion. Praise Him, because turns our broken lives into beautiful creations!"
+        season = .wonder
+        
+        addDevotion(song: &song, artist: &artist, lyrics: &lyrics, lyricsURL: &lyricsURL, spotifyURI: &spotifyURI, scriptureSource: &scriptureSource, scriptureText: &scriptureText, devotionText: &devotionText, season: season)
+        
         song = "Reckless Love"
+        artist = "Cory Asbury"
+        lyrics = "Before I spoke a word,\nYou were singing over me\nYou have been so, so good to me"
+        lyricsURL = "https://bethelmusic.com/chords-and-lyrics/reckless-love/"
+        spotifyURI = "0rH0mprtecH3grD9HFM5AD"
+        scriptureSource = "Luke 15"
+        scriptureText = "'My son', the father said,\n‘you are always with me,\nand everything I have is yours'"
+        devotionText = "We mess up. Daily. If we were to try out of our own strength to be holy and to please our God, we would fail every time. Thankfully, we serve a God who does the work for us. He makes our brokenness beautiful and separates us from our sin. He teaches us to delight in holiness. When our faith becomes lifeless and weak and we're far from Him, He reminds us of the incredible joy of His salvation. When guilt and shame are crippling, He covers us in forgiveness. The only sacrifice He wants  is for us to come before Him with a broken spirit and repentant heart. If we truly desire change, He will work in us.  Regardless of where we've been or what we've done, the Lord can and will create clean hearts in us, He will erase all of our sins, and He will always cover us in His unfailing mercy and compassion. Praise Him, because turns our broken lives into beautiful creations!"
+        season = .wonder
+        
+        addDevotion(song: &song, artist: &artist, lyrics: &lyrics, lyricsURL: &lyricsURL, spotifyURI: &spotifyURI, scriptureSource: &scriptureSource, scriptureText: &scriptureText, devotionText: &devotionText, season: season)
+        
+        song = "Everything I Am"
         artist = "Cory Asbury"
         lyrics = "Before I spoke a word,\nYou were singing over me\nYou have been so, so good to me"
         lyricsURL = "https://bethelmusic.com/chords-and-lyrics/reckless-love/"
